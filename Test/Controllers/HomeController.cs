@@ -106,6 +106,7 @@ namespace Test.Controllers
 
             return StatusCode((int)response.StatusCode, content);
         }
+        
         [HttpGet]
         [Route("Home/GetCustomerDetails")]
         public async Task<IActionResult> GetCustomerDetails()
