@@ -1,0 +1,99 @@
+﻿@model Testdata.Viewmodel.CustomerModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "AddCustomerdetail";
+}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<div class="container py-4">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h3 class="text-center mb-4">Add Customer Details</h3>
+
+            @* Error message *@
+            @if (!string.IsNullOrEmpty(ViewBag.Error as string))
+            {
+                <div class="alert alert-danger text-center" role="alert">
+                    @ViewBag.Error
+                </div>
+            }
+            <form id="addCustomerForm" autocomplete="off" enctype="multipart/form-data">
+                <div class="form-group row">
+                    <div class="col-md-6">
+                        <label class="form-label">Customer Name</label>
+                        <input type="hidden" id="CustomerId" name="Id" value="@Model.id" />
+                        <input id="CustomerName" name="Name" class="form-control" value="@Model.CustomerName" required style="border-color: #808080b0;" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Mobile Number</label>
+                        <input id="CustomerMobileno" name="MobileNo" class="form-control" type="tel" value="@Model.CustomerMobileno" maxlength="12" min="10" required style="border-color: #808080b0;" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-6">
+                        <label class="form-label">Pincode</label>
+                        <input id="CustomerPincode" name="Pincode" class="form-control" value="@Model.CustomerPincode" required style="border-color: #808080b0;" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Email</label>
+                        <input id="Email" name="Email" class="form-control" type="email" value="@Model.Email" required style="border-color: #808080b0;" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-6">
+                        <label class="form-label">Address</label>
+                        <textarea id="Address" name="Address" class="form-control" required style="border-color: #808080b0;">@Model.Address</textarea>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-3">
+                    <div class="card-body text-center py-3">
+                        <button type="submit" class="btn btn-info btn-lg">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+      document.getElementById("addCustomerForm").addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const customer = {
+            id: parseInt(document.getElementById("CustomerId").value) || 0,
+            customerName: document.getElementById("CustomerName").value,
+            customerMobileno: parseInt(document.getElementById("CustomerMobileno").value),
+            customerPincode: parseInt(document.getElementById("CustomerPincode").value),
+            address: document.getElementById("Address").value,
+            email: document.getElementById("Email").value
+        };
+
+        const res = await fetch('/Home/AddCustomer', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(customer)
+        });
+
+        const json = await res.json();
+
+        if (res.ok) {
+            alert(json.message || (customer.id > 0 ? "Customer updated successfully!" : "Customer registered successfully!"));
+            window.location.href = '/Home/GetCustomerDetails';
+        } else {
+            alert(json.message || "Operation failed.");
+        }
+    });
+
+</script>
+
+<script>
+    $('#CustomerMobileno').on('input', function () {
+          let val = this.value;
+          if (val.startsWith('+')) {
+              val = '+' + val.slice(1).replace(/[^0-9]/g, '');
+          } else {
+              val = val.replace(/[^0-9]/g, '');
+          }
+          this.value = val;
+      });
+</script>

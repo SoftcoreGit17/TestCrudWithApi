@@ -1,0 +1,133 @@
+﻿@model Testdata.Viewmodel.ResponseModel<List<Testdata.Viewmodel.CustomerModel>>
+@{
+    Layout = "_Layout";
+    // Layout = null;
+    ViewData["Title"] = "Customerdetail";
+}
+
+<style>
+    #Testtablelist tbody tr.odd td {
+        background-color: #adb5bd8f !important;
+        color: black !important;
+    }
+
+    #Testtablelist tbody tr.even td {
+        background-color: white !important;
+        color: black !important;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<div class="container py-4">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h3 class="text-center mb-4">Customer Details</h3>
+
+            @if (!string.IsNullOrEmpty(ViewBag.Error as string))
+            {
+                <div class="alert alert-danger text-center" role="alert">
+                    @ViewBag.Error
+                </div>
+            }
+
+            @* Customer Table *@
+
+            @if (Model?.Data == null || !Model.Data.Any())
+            {
+                <p class="text-center text-muted">No customer data available.</p>
+            }
+            else
+            {
+                <div class="table-responsive">
+                    <table id="Testtablelist" class="table table-bordered table-hover nowrap w-100" style="width:100%;">
+                        <thead class="table-primary text-center">
+                            <tr>
+                                <th>Sl.No</th>
+                                <th>Name</th>
+                                <th>Address</th>
+                                <th>Mobile No</th>
+                                <th>Pincode</th>
+                                <th>Email</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                int count = 1;
+                            }
+                            @foreach (var customer in Model.Data)
+                            {
+                                <tr>
+                                    <td>@count</td>
+                                    <td>@customer.CustomerName</td>
+                                    <td>@customer.Address</td>
+                                    <td>@customer.CustomerMobileno</td>
+                                    <td>@customer.CustomerPincode</td>
+                                    <td>@customer.Email</td>
+                                    <td>
+                                        <i class="fas fa-edit edit-btn" data-id="@customer.id" style="cursor:pointer;"></i>
+                                        <i class="fas fa-trash delete-btn" data-id="@customer.id" style="cursor:pointer; color: #dc3545;"></i>
+                                    </td>
+
+
+                                </tr>
+                                count++;
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $('#Testtablelist').DataTable({
+            destroy: true,
+            fixedHeader: true,
+            scrollY: '400px',
+            scrollX: true,
+            scrollCollapse: true,
+            paging: true,
+            searching: true,
+            info: true,
+            ordering: false,
+            pageLength: 10,
+            lengthMenu: [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
+            autoWidth: true
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $('.edit-btn').on('click', function () {
+        var customerId = $(this).data('id');
+        window.location.href = '/Home/AddCustomer?id=' + customerId;
+    });
+        $('.delete-btn').on('click', function () {
+            var customerId = $(this).data('id');
+
+            if (confirm("Are you sure you want to delete this customer?")) {
+                $.ajax({
+                    url: '/Home/DeleteCustomer?id=' + customerId,
+                    type: 'DELETE',
+                    success: function (response) {
+                        alert("Customer deleted successfully.");
+
+                        location.reload();
+                    },
+                    error: function (xhr) {
+                        let msg = xhr.responseJSON?.message || "An error occurred.";
+                        alert("Delete failed: " + msg);
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+
+
+
+
