@@ -2,6 +2,7 @@ using Microsoft.Extensions.Options;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using Test.Models;
+using TestData;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +23,7 @@ builder.Services.AddHttpClient("AuthorizedClient")
         var token = httpContextAccessor.HttpContext.Request.Cookies["accessToken"];
         client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
     });
+builder.Services.AddSingleton<DapperContext>();
 
 
 var app = builder.Build();

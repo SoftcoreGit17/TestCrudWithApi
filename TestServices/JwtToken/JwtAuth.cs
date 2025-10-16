@@ -33,7 +33,7 @@ namespace TestServices.JwtToken
                         new Claim(ClaimTypes.Name, model.Username)
                     }),
                  Expires = DateTime.UtcNow.AddHours(5),
-                //Expires = DateTime.UtcNow.AddMinutes(1),
+               // Expires = DateTime.UtcNow.AddMinutes(1),
                 SigningCredentials = new SigningCredentials(
                     new SymmetricSecurityKey(tokenKey), SecurityAlgorithms.HmacSha256Signature)
             };

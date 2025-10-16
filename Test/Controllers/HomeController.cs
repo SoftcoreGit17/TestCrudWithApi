@@ -6,6 +6,7 @@ using System.Net.Http.Headers;
 using System.Text.Json;
 using Test.Models;
 using Testdata.Viewmodel;
+using TestData;
 using TestServices.Utilities;
 
 namespace Test.Controllers
@@ -14,10 +15,13 @@ namespace Test.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly HttpClient _httpClient;
-        public HomeController(ILogger<HomeController> logger, IHttpClientFactory httpClientFactory)
+        private readonly DapperContext _DapperContext;
+
+        public HomeController(ILogger<HomeController> logger, IHttpClientFactory httpClientFactory,DapperContext dapperContext)
         {
             _logger = logger;
             _httpClient = httpClientFactory.CreateClient("MyApiClient");
+            _DapperContext = dapperContext;
         }
 
         public IActionResult Index()
@@ -139,6 +143,7 @@ namespace Test.Controllers
 
             if (data == null)
             {
+                ViewBag.Error = "No customer data available.";
                 data = new ResponseModel<List<CustomerModel>>
                 {
                     Data = new List<CustomerModel>()
@@ -146,6 +151,7 @@ namespace Test.Controllers
             }
             else if (data.Data == null)
             {
+                ViewBag.Error = "No customer data available.";
                 data.Data = new List<CustomerModel>();
             }
 

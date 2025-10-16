@@ -7,17 +7,16 @@ namespace Test.Controllers
 {
     public class BarCodeController : Controller
     {
-       private readonly IWebHostEnvironment _environment;
+        private readonly IWebHostEnvironment _environment;
         public BarCodeController(IWebHostEnvironment environment)
         {
             _environment = environment;
         }
-
+        [HttpGet]
         public IActionResult CreateBarcode()
         {
             return View();
         }
-
         [HttpPost]
         public IActionResult CreateBarcode(GenerateBarcodeModel generateBarcode)
         {
@@ -32,24 +31,48 @@ namespace Test.Controllers
                 GeneratedBarcode barcode = IronBarCode.BarcodeWriter.CreateBarcode(
                     generateBarcode.BarcodeText, BarcodeWriterEncoding.Code128);
 
-                barcode.ResizeTo(450, 150);
-                barcode.AddBarcodeValueTextBelowBarcode();
+                barcode.ResizeTo(200, 40); 
                 barcode.ChangeBarCodeColor(Color.Black);
-                barcode.SetMargins(15);
+                barcode.SetMargins(10);
 
+                using var barcodeImage = barcode.Image;
+                int finalWidth = barcodeImage.Width;
+                int finalHeight = barcodeImage.Height + 30; 
+
+                using var finalImage = new Bitmap(finalWidth, finalHeight);
+                using (Graphics g = Graphics.FromImage(finalImage))
+                {
+                    g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                    g.Clear(Color.White);
+
+                    g.DrawImage(barcodeImage, 0, 0);
+
+                    using var font = new Font("Arial", 12, FontStyle.Bold);
+                    using var brush = new SolidBrush(Color.Black);
+
+                    var text = generateBarcode.BarcodeText;
+                    SizeF textSize = g.MeasureString(text, font);
+                    float x = (finalWidth - textSize.Width) / 2;
+                    float y = barcodeImage.Height + 5;
+
+                    g.DrawString(text, font, brush, x, y);
+                }
                 string path = Path.Combine(_environment.WebRootPath, "GeneratedBarcode");
                 if (!Directory.Exists(path))
                 {
                     Directory.CreateDirectory(path);
                 }
+
                 string fileName = $"barcode_{Guid.NewGuid()}.png";
                 string filePath = Path.Combine(path, fileName);
-                barcode.SaveAsPng(filePath);
+                finalImage.Save(filePath, System.Drawing.Imaging.ImageFormat.Png);
+
                 string imageUrl = $"{Request.Scheme}://{Request.Host}{Request.PathBase}/GeneratedBarcode/{fileName}";
                 ViewBag.QrCodeUri = imageUrl;
+
                 return View();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 ModelState.AddModelError("", "There was an error generating the barcode.");
                 return View();

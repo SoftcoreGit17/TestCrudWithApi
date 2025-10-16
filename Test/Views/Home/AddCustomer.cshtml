@@ -5,6 +5,8 @@
 }
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <div class="container py-4">
     <div class="card shadow-sm">
@@ -33,7 +35,7 @@
                 <div class="form-group row">
                     <div class="col-md-6">
                         <label class="form-label">Pincode</label>
-                        <input id="CustomerPincode" name="Pincode" class="form-control" value="@Model.CustomerPincode" required style="border-color: #808080b0;" />
+                        <input id="CustomerPincode" name="Pincode" class="form-control" value="@Model.CustomerPincode" maxlength="6" min="6" required style="border-color: #808080b0;" />
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">Email</label>
@@ -83,7 +85,6 @@
             alert(json.message || "Operation failed.");
         }
     });
-
 </script>
 
 <script>
@@ -96,4 +97,15 @@
           }
           this.value = val;
       });
+       $('#CustomerPincode').on('input', function () {
+          let val = this.value;
+          if (val.startsWith('+')) {
+              val = '+' + val.slice(1).replace(/[^0-9]/g, '');
+          } else {
+              val = val.replace(/[^0-9]/g, '');
+          }
+          this.value = val;
+      });
+
+
 </script>

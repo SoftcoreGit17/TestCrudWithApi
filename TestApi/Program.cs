@@ -4,6 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.Text.Json;
 using Testdata.Viewmodel;
+using TestData;
 using TestData.Models.Entities;
 using TestServices.JwtToken;
 using TestServices.Utilities;
@@ -71,6 +72,7 @@ builder.Services.AddSwaggerGen(c =>
     });
     c.OperationFilter<AuthorizeCheckOperationFilter>();
 });
+builder.Services.AddSingleton<DapperContext>();
 builder.Services.AddDbContext<Db23320Context>(o => o.UseSqlServer("DefaultConnection"));
 builder.Services.AddScoped<ICustomerInterface, Customer>();
 builder.Services.AddScoped<IJwtAuth, JwtAuth>();

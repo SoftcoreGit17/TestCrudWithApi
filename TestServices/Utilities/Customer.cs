@@ -92,6 +92,7 @@ namespace TestServices.Utilities
                         data.CustomerMobileno = model.CustomerMobileno;
                         data.CustomerPincode = model.CustomerPincode;
                         data.Email = model.Email;
+                        data.Address = model.Address;
                     };
                     _context.SaveChanges();
                 }
