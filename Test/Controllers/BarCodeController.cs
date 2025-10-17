@@ -1,20 +1,31 @@
 ﻿using IronBarCode;
 using Microsoft.AspNetCore.Mvc;
 using System.Drawing;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using Test.Models;
 
 namespace Test.Controllers
 {
     public class BarCodeController : Controller
     {
+        private readonly HttpClient _httpClient;
         private readonly IWebHostEnvironment _environment;
-        public BarCodeController(IWebHostEnvironment environment)
+        public BarCodeController(IWebHostEnvironment environment, IHttpClientFactory httpClientFactory)
         {
             _environment = environment;
+            _httpClient = httpClientFactory.CreateClient("MyApiClient");
+
         }
         [HttpGet]
         public IActionResult CreateBarcode()
         {
+            string token = Request.Cookies["accessToken"];
+
+            if (string.IsNullOrEmpty(token))
+            {
+                return RedirectToAction("Login", "Admin");
+            }
             return View();
         }
         [HttpPost]
@@ -28,8 +39,13 @@ namespace Test.Controllers
 
             try
             {
-                GeneratedBarcode barcode = IronBarCode.BarcodeWriter.CreateBarcode(
-                    generateBarcode.BarcodeText, BarcodeWriterEncoding.Code128);
+                string token = Request.Cookies["accessToken"];
+
+                if (string.IsNullOrEmpty(token))
+                    return Unauthorized();
+
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                GeneratedBarcode barcode = IronBarCode.BarcodeWriter.CreateBarcode(generateBarcode.BarcodeText, BarcodeWriterEncoding.Code128);
 
                 barcode.ResizeTo(200, 40); 
                 barcode.ChangeBarCodeColor(Color.Black);
