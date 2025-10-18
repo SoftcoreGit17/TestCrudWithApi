@@ -47,6 +47,17 @@ namespace Test.Controllers
 
             return View();
         }
+        public IActionResult TestUi()
+        {
+            string token = Request.Cookies["accessToken"];
+
+            if (string.IsNullOrEmpty(token))
+            {
+                return RedirectToAction("Login", "Admin");
+            }
+
+            return View();
+        }
 
         [HttpGet]
         public async Task<IActionResult> AddCustomer(int? id)

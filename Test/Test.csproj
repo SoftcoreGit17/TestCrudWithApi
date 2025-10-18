@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\assets\NewFolder\**" />
+    <Content Remove="wwwroot\assets\NewFolder\**" />
+    <EmbeddedResource Remove="wwwroot\assets\NewFolder\**" />
+    <None Remove="wwwroot\assets\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="BarCode" Version="2025.10.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.9">
@@ -26,6 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\assets\css\" />
     <Folder Include="wwwroot\GeneratedBarcode\" />
   </ItemGroup>
 
