@@ -7,14 +7,18 @@ namespace Test.Controllers
 
     public class AdminController : Controller
     {
+        private readonly ILogger<AdminController> _logger;
         private readonly HttpClient _httpClient;
-        public AdminController(IHttpClientFactory httpClientFactory)
+        public AdminController(IHttpClientFactory httpClientFactory, ILogger<AdminController> logger)
         {
             _httpClient = httpClientFactory.CreateClient("MyApiClient");
+            _logger = logger;
+
         }
         [HttpGet]
         public async Task<IActionResult> Login()
         {
+            _logger.LogInformation("Today was so sunny!!");
             return View();
         }
         [HttpPost]

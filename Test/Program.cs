@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Options;
+using Serilog;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using Test.Models;
@@ -6,7 +7,13 @@ using TestData;
 using TestServices.Utilities;
 
 var builder = WebApplication.CreateBuilder(args);
+var logger = new LoggerConfiguration()
+  .ReadFrom.Configuration(builder.Configuration)
+  .Enrich.FromLogContext()
+  .CreateLogger();
 
+builder.Logging.ClearProviders();
+builder.Logging.AddSerilog(logger);
 builder.Services.AddControllersWithViews();
 builder.Services.Configure<ApiSettings>(builder.Configuration.GetSection("ApiSettings"));
 
