@@ -9,14 +9,11 @@ namespace TestServices.Utilities
     {
         private readonly Db23320Context _context;
         private readonly MailSettings _mailSettings;
-
         public Customer(Db23320Context context, IOptions<MailSettings> mailSettings)
         {
             _context = context;
             _mailSettings = mailSettings.Value;
         }
-
-
         public async Task<CustomerRe> AddCustomer(CustomerModel model)
         {
             try
@@ -32,7 +29,6 @@ namespace TestServices.Utilities
                 };
                 await _context.AddAsync(customer);
                 await _context.SaveChangesAsync();
-
                 return customer;
             }
             catch (Exception)
@@ -55,7 +51,6 @@ namespace TestServices.Utilities
                         Email = c.Email,
                         Isdelete = c.Isdelete,
                     }).OrderByDescending(x=>x.id).Where(x=>x.Isdelete == false).ToListAsync();
-
                 return data;
             }
             catch (Exception)
@@ -63,7 +58,6 @@ namespace TestServices.Utilities
                 throw;
             }
         }
-
         public async Task<CustomerRe> deletecustomerbyid(int id)
         {
             try
@@ -109,7 +103,6 @@ namespace TestServices.Utilities
             {
                 var data = await _context.CustomerRes
                     .FirstOrDefaultAsync(x => x.CustomerName == model.Username && x.Password == model.Password);
-
                 if (data != null)
                 {
                     return new Logindata
@@ -118,7 +111,6 @@ namespace TestServices.Utilities
                         Password = data.Password,
                     };
                 }
-
                 return null;
             }
             catch (Exception)
@@ -179,6 +171,5 @@ namespace TestServices.Utilities
         //    smtp.Disconnect(true);
         //}
     }
-
 }
 

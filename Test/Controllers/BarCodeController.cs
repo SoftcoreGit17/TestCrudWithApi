@@ -1,9 +1,12 @@
 ﻿using IronBarCode;
 using Microsoft.AspNetCore.Mvc;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using Test.Models;
+using ZXing;
+using ZXing.Common;
 
 namespace Test.Controllers
 {
@@ -40,20 +43,45 @@ namespace Test.Controllers
             try
             {
                 string token = Request.Cookies["accessToken"];
-
                 if (string.IsNullOrEmpty(token))
                     return Unauthorized();
 
-                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                GeneratedBarcode barcode = IronBarCode.BarcodeWriter.CreateBarcode(generateBarcode.BarcodeText, BarcodeWriterEncoding.Code128);
+                _httpClient.DefaultRequestHeaders.Authorization =
+                    new AuthenticationHeaderValue("Bearer", token);
 
-                barcode.ResizeTo(200, 40); 
-                barcode.ChangeBarCodeColor(Color.Black);
-                barcode.SetMargins(10);
+                // Generate barcode using ZXing
+                var writer = new ZXing.BarcodeWriterPixelData
+                {
+                    Format = ZXing.BarcodeFormat.CODE_128,
+                    Options = new ZXing.Common.EncodingOptions
+                    {
+                        Width = 200,
+                        Height = 40,
+                        Margin = 10
+                    }
+                };
 
-                using var barcodeImage = barcode.Image;
-                int finalWidth = barcodeImage.Width;
-                int finalHeight = barcodeImage.Height + 30; 
+                var pixelData = writer.Write(generateBarcode.BarcodeText);
+
+                // Create barcode bitmap
+                using var barcodeBitmap = new Bitmap(
+                    pixelData.Width,
+                    pixelData.Height,
+                    System.Drawing.Imaging.PixelFormat.Format32bppRgb);
+
+                var bitmapData = barcodeBitmap.LockBits(
+                    new Rectangle(0, 0, pixelData.Width, pixelData.Height),
+                    ImageLockMode.WriteOnly,
+                    System.Drawing.Imaging.PixelFormat.Format32bppRgb);
+
+                System.Runtime.InteropServices.Marshal.Copy(
+                    pixelData.Pixels, 0, bitmapData.Scan0, pixelData.Pixels.Length);
+
+                barcodeBitmap.UnlockBits(bitmapData);
+
+                // Add space for text below
+                int finalWidth = barcodeBitmap.Width;
+                int finalHeight = barcodeBitmap.Height + 30;
 
                 using var finalImage = new Bitmap(finalWidth, finalHeight);
                 using (Graphics g = Graphics.FromImage(finalImage))
@@ -61,7 +89,7 @@ namespace Test.Controllers
                     g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
                     g.Clear(Color.White);
 
-                    g.DrawImage(barcodeImage, 0, 0);
+                    g.DrawImage(barcodeBitmap, 0, 0);
 
                     using var font = new Font("Arial", 12, FontStyle.Bold);
                     using var brush = new SolidBrush(Color.Black);
@@ -69,21 +97,24 @@ namespace Test.Controllers
                     var text = generateBarcode.BarcodeText;
                     SizeF textSize = g.MeasureString(text, font);
                     float x = (finalWidth - textSize.Width) / 2;
-                    float y = barcodeImage.Height + 5;
+                    float y = barcodeBitmap.Height + 5;
 
                     g.DrawString(text, font, brush, x, y);
                 }
+
+                // Save file
                 string path = Path.Combine(_environment.WebRootPath, "GeneratedBarcode");
                 if (!Directory.Exists(path))
-                {
                     Directory.CreateDirectory(path);
-                }
 
                 string fileName = $"barcode_{Guid.NewGuid()}.png";
                 string filePath = Path.Combine(path, fileName);
+
                 finalImage.Save(filePath, System.Drawing.Imaging.ImageFormat.Png);
 
-                string imageUrl = $"{Request.Scheme}://{Request.Host}{Request.PathBase}/GeneratedBarcode/{fileName}";
+                string imageUrl =
+                    $"{Request.Scheme}://{Request.Host}{Request.PathBase}/GeneratedBarcode/{fileName}";
+
                 ViewBag.QrCodeUri = imageUrl;
 
                 return View();
@@ -94,7 +125,6 @@ namespace Test.Controllers
                 return View();
             }
         }
-
     }
 
 

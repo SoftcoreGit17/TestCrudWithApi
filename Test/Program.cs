@@ -33,7 +33,6 @@ builder.Services.AddHttpClient("AuthorizedClient")
     });
 builder.Services.AddSingleton<DapperContext>();
 
-
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
