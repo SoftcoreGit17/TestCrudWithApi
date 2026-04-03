@@ -179,16 +179,20 @@ namespace TestServices.Utilities
             try
             {
                 var data = await _context.CustomerRes
-                  .Select(c => new CustomerModel
-                  {
-                      id = c.Id,
-                      CustomerName = c.CustomerName,
-                      CustomerMobileno = c.CustomerMobileno,
-                      CustomerPincode = c.CustomerPincode,
-                      Address = c.Address,
-                      Email = c.Email,
-                      Profileimage = c.Profileimage,
-                  }).Where(x => x.id == id).FirstOrDefaultAsync();
+                    .Where(c => c.Id == id && c.Isdelete == false) 
+                    .Select(c => new CustomerModel
+                    {
+                        id = c.Id,
+                        CustomerName = c.CustomerName,
+                        CustomerMobileno = c.CustomerMobileno,
+                        CustomerPincode = c.CustomerPincode,
+                        Address = c.Address,
+                        Email = c.Email,
+                        Profileimage = c.Profileimage,
+                        Isdelete = c.Isdelete // ✅ include this
+                    })
+                    .FirstOrDefaultAsync();
+
                 return data;
             }
             catch (Exception)
