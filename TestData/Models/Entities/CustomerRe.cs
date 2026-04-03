@@ -24,4 +24,6 @@ public partial class CustomerRe
     public DateTime? RefreshTokenExpiry { get; set; }
 
     public bool? Isdelete { get; set; }
+
+    public string? Profileimage { get; set; }
 }

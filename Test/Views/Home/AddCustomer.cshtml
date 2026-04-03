@@ -25,17 +25,17 @@
                     <div class="col-md-6">
                         <label class="form-label">Customer Name</label>
                         <input type="hidden" id="CustomerId" name="Id" value="@Model.id" />
-                        <input id="CustomerName" name="Name" class="form-control" value="@Model.CustomerName" required style="border-color: #808080b0;" />
+                        <input id="CustomerName" name="CustomerName" class="form-control" value="@Model.CustomerName" required style="border-color: #808080b0;" />
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">Mobile Number</label>
-                        <input id="CustomerMobileno" name="MobileNo" class="form-control" type="tel" value="@Model.CustomerMobileno" maxlength="12" min="10" required style="border-color: #808080b0;" />
+                        <input id="CustomerMobileno" name="CustomerMobileno" class="form-control" type="tel" value="@Model.CustomerMobileno" maxlength="12" min="10" required style="border-color: #808080b0;" />
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-md-6">
                         <label class="form-label">Pincode</label>
-                        <input id="CustomerPincode" name="Pincode" class="form-control" value="@Model.CustomerPincode" maxlength="6" min="6" required style="border-color: #808080b0;" />
+                        <input id="CustomerPincode" name="CustomerPincode" class="form-control" value="@Model.CustomerPincode" maxlength="6" min="6" required style="border-color: #808080b0;" />
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">Email</label>
@@ -44,9 +44,15 @@
                 </div>
                 <div class="form-group row">
                     <div class="col-md-6">
+                        <label class="form-label">Profile Image</label>
+                        <input type="file" id="Image" name="Image" class="form-control" accept="image/*" />
+                        <input type="hidden" name="Profileimage" value="@Model.Profileimage" />
+                        <img id="ImagePreview" src="@Model.Profileimage" width="80" height="80" class="mt-2" style="display: @(string.IsNullOrEmpty(Model.Profileimage) ? "none" : "block");" />
+                    </div>
+                    <div class="col-md-6">
                         <label class="form-label">Address</label>
                         <textarea id="Address" name="Address" class="form-control" required style="border-color: #808080b0;">@Model.Address</textarea>
-                    </div>
+                    </div>                 
                 </div>
                 <div class="col-md-12 mt-3">
                     <div class="card-body text-center py-3">
@@ -57,7 +63,7 @@
         </div>
     </div>
 </div>
-<script>
+@* <script>
       document.getElementById("addCustomerForm").addEventListener("submit", async function (e) {
         e.preventDefault();
 
@@ -67,7 +73,8 @@
             customerMobileno: parseInt(document.getElementById("CustomerMobileno").value),
             customerPincode: parseInt(document.getElementById("CustomerPincode").value),
             address: document.getElementById("Address").value,
-            email: document.getElementById("Email").value
+            email: document.getElementById("Email").value,
+            image: document.getElementById("Image").value
         };
 
         const res = await fetch('/Home/AddCustomer', {
@@ -85,8 +92,34 @@
             alert(json.message || "Operation failed.");
         }
     });
-</script>
+</script> *@
+<script>
+       document.getElementById("addCustomerForm").addEventListener("submit", async function (e) {
+        e.preventDefault();
 
+        const form = document.getElementById("addCustomerForm");
+        const formData = new FormData(form); // includes file automatically
+
+        try {
+            const res = await fetch('/Home/AddCustomer', {
+                method: 'POST',
+                body: formData
+            });
+
+            const json = await res.json();
+
+            if (res.ok) {
+                alert(json.message || "Customer saved successfully!");
+                window.location.href = '/Home/GetCustomerDetails';
+            } else {
+                alert(json.message || "Operation failed.");
+            }
+        } catch (err) {
+            console.error(err);
+            alert("Error submitting form. Check console for details.");
+        }
+    });
+</script>
 <script>
     $('#CustomerMobileno').on('input', function () {
           let val = this.value;

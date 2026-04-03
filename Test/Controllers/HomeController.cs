@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -90,38 +91,72 @@ namespace Test.Controllers
 
             return View(customer.Data); 
         }
-
+        //[HttpPost]
+        //public async Task<IActionResult> AddCustomer([FromForm] CustomerModel model)
+        //{
+        //    string token = Request.Cookies["accessToken"];
+        //    if (string.IsNullOrEmpty(token))
+        //        return Unauthorized();
+        //    _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+        //    string apiUrl = model.id > 0
+        //        ? "api/CustomerDetails/UpdateCustomerbyid"
+        //        : "api/CustomerDetails/CustomerRegistration";
+        //    var method = model.id > 0 ? HttpMethod.Put : HttpMethod.Post;
+        //    var request = new HttpRequestMessage(method, apiUrl)
+        //    {
+        //        Content = JsonContent.Create(model)
+        //    };
+        //    var response = await _httpClient.SendAsync(request);
+        //    var content = await response.Content.ReadAsStringAsync();
+        //    if (response.IsSuccessStatusCode)
+        //    {
+        //        return Content(content, "application/json");
+        //    }
+        //    return StatusCode((int)response.StatusCode, content);
+        //}
         [HttpPost]
-        public async Task<IActionResult> AddCustomer([FromBody] CustomerModel model)
+        public async Task<IActionResult> AddCustomer([FromForm] CustomerModel model)
         {
             string token = Request.Cookies["accessToken"];
             if (string.IsNullOrEmpty(token))
                 return Unauthorized();
 
-            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-
-            string apiUrl = model.id > 0
+            var apiUrl = model.id > 0
                 ? "api/CustomerDetails/UpdateCustomerbyid"
                 : "api/CustomerDetails/CustomerRegistration";
 
-            var method = model.id > 0 ? HttpMethod.Put : HttpMethod.Post;
+            using var content = new MultipartFormDataContent();
 
-            var request = new HttpRequestMessage(method, apiUrl)
+            content.Add(new StringContent(model.CustomerName ?? ""), "CustomerName");
+            content.Add(new StringContent(model.CustomerMobileno?.ToString() ?? ""), "CustomerMobileno");
+            content.Add(new StringContent(model.CustomerPincode?.ToString() ?? ""), "CustomerPincode");
+            content.Add(new StringContent(model.Address ?? ""), "Address");
+            content.Add(new StringContent(model.Email ?? ""), "Email");
+            content.Add(new StringContent(model.id?.ToString() ?? ""), "id");
+
+            if (model.Image != null && model.Image.Length > 0)
             {
-                Content = JsonContent.Create(model)
-            };
-
-            var response = await _httpClient.SendAsync(request);
-            var content = await response.Content.ReadAsStringAsync();
-
-            if (response.IsSuccessStatusCode)
+                var ms = new MemoryStream();
+                await model.Image.CopyToAsync(ms);
+                ms.Position = 0;
+                content.Add(new StreamContent(ms), "Image", model.Image.FileName);
+            }
+            else
             {
-                return Content(content, "application/json");
+                content.Add(new StringContent(model.Profileimage ?? ""), "Profileimage");
             }
 
-            return StatusCode((int)response.StatusCode, content);
+            using var request = new HttpRequestMessage(model.id > 0 ? HttpMethod.Put : HttpMethod.Post, apiUrl)
+            {
+                Content = content
+            };
+
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            var response = await _httpClient.SendAsync(request);
+            var responseContent = await response.Content.ReadAsStringAsync();
+
+            return Content(responseContent, "application/json");
         }
-        
         [HttpGet]
         [Route("Home/GetCustomerDetails")]
         public async Task<IActionResult> GetCustomerDetails()

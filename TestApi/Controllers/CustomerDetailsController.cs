@@ -64,6 +64,17 @@ namespace TestApi.Controllers
             try
             {
                 var result = await _ICustomerInterface.getcustomerDetail();
+                foreach (var c in result)
+                {
+                    if (!string.IsNullOrEmpty(c.Profileimage))
+                    {
+                        c.Profileimage = $"{Request.Scheme}://{Request.Host}/ProfileImages/{c.Profileimage}";
+                    }
+                    else
+                    {
+                        c.Profileimage = $"{Request.Scheme}://{Request.Host}/ProfileImages/no-image.jpg";
+                    }
+                }
                 if (result == null || result.Count == 0)
                 {
                     response.IsSuccess = false;
@@ -180,14 +191,20 @@ namespace TestApi.Controllers
                     response.Message = "Data not found.";
                     return NotFound(response);
                 }
+                // Build full URL for profile image
+                if (!string.IsNullOrEmpty(result.Profileimage))
+                {
+                    result.Profileimage = $"{Request.Scheme}://{Request.Host}/ProfileImages/{result.Profileimage}";
+                }
                 else
                 {
-                    response.Data = result;
-                    response.IsSuccess = true;
-                    response.Status = true;
-                    response.StatusCode = StatusCodes.Status200OK;
-                    response.Message = "Customer details fetched successfully.";
+                    result.Profileimage = $"{Request.Scheme}://{Request.Host}/ProfileImages/no-image.jpg";
                 }
+                response.Data = result;
+                response.IsSuccess = true;
+                response.Status = true;
+                response.StatusCode = StatusCodes.Status200OK;
+                response.Message = "Customer details fetched successfully.";
                 return Ok(response);
             }
             catch (Exception ex)

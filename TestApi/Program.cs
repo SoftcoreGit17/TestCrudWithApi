@@ -91,7 +91,8 @@ app.UseCors(policy =>
           .AllowAnyHeader());
 
 app.UseHttpsRedirection();
-
+app.UseHttpsRedirection();
+app.UseStaticFiles();
 app.UseAuthorization();
 
 app.MapControllers();
