@@ -32,3 +32,6 @@ msbuild.wrn
 
 # Visual Studio 2015
 .vs/
+/Logs/Serilog20260314.log
+/Logs/Serilog20260317.log
+/Logs/Serilog20260403.log
