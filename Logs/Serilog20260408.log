@@ -1,0 +1,24 @@
+[2026-04-08 11:09:13.855 +05:30  INF]  User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2026-04-08 11:09:15.695 +05:30  INF]  Now listening on: https://localhost:7253
+[2026-04-08 11:09:15.696 +05:30  INF]  Now listening on: http://localhost:5092
+[2026-04-08 11:09:15.826 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2026-04-08 11:09:15.826 +05:30  INF]  Hosting environment: Development
+[2026-04-08 11:09:15.826 +05:30  INF]  Content root path: C:\Akanksha\Test\Test
+[2026-04-08 11:09:16.428 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/ - null null
+[2026-04-08 11:09:17.021 +05:30  INF]  Executing endpoint 'Test.Controllers.AdminController.Login (Test)'
+[2026-04-08 11:09:17.089 +05:30  INF]  Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login() on controller Test.Controllers.AdminController (Test).
+[2026-04-08 11:09:17.109 +05:30  INF]  Today was so sunny!!
+[2026-04-08 11:09:17.125 +05:30  INF]  Executing ViewResult, running view Login.
+[2026-04-08 11:09:17.240 +05:30  INF]  Executed ViewResult - view Login executed in 117.1735ms.
+[2026-04-08 11:09:17.242 +05:30  INF]  Executed action Test.Controllers.AdminController.Login (Test) in 151.4198ms
+[2026-04-08 11:09:17.242 +05:30  INF]  Executed endpoint 'Test.Controllers.AdminController.Login (Test)'
+[2026-04-08 11:09:17.247 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/ - 200 null text/html; charset=utf-8 831.3407ms
+[2026-04-08 11:09:17.278 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - null null
+[2026-04-08 11:09:17.303 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 25.4309ms
+[2026-04-08 11:09:17.338 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_vs/browserLink - null null
+[2026-04-08 11:09:17.388 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.4928ms
+[2026-04-08 11:09:18.168 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/favicon.ico - null null
+[2026-04-08 11:09:18.174 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-08 11:09:18.228 +05:30  INF]  Sending file. Request path: 'favicon.ico'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\3om3alwwon-{0}-61n19gt1b8-61n19gt1b8.gz'
+[2026-04-08 11:09:18.229 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-08 11:09:18.232 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/favicon.ico - 200 5463 image/x-icon 64.0347ms

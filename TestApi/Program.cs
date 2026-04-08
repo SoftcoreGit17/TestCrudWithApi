@@ -19,7 +19,7 @@ builder.Services.AddScoped<IJwtAuth>(provider =>
     return new JwtAuth(configuration);
 });
 builder.Services.AddCors();
-
+builder.Services.AddHttpClient();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(x =>
