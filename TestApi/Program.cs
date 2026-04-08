@@ -89,13 +89,12 @@ app.UseCors(policy =>
     policy.AllowAnyOrigin()
           .AllowAnyMethod()
           .AllowAnyHeader());
+app.UseHttpsRedirection();      
+app.UseStaticFiles();          
+app.UseRouting();          
+app.UseAuthorization();         
 
-app.UseHttpsRedirection();
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-app.UseAuthorization();
-
-app.MapControllers();
+app.MapControllers();           
 
 app.Run();
 
