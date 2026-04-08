@@ -44,5 +44,5 @@ namespace TestApi.Controllers
             return File(pdfBytes, "application/pdf", "CustomerReport.pdf");
         }
     }
-    }
+}
 

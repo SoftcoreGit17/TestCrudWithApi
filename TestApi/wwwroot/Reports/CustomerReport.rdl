@@ -582,7 +582,7 @@
                         <Image Name="Image4">
                           <Source>External</Source>
                           <Value>=Fields!Profileimage.Value</Value>
-                          <Sizing>FitProportional</Sizing>
+                          <Sizing>Fit</Sizing>
                           <Style>
                             <Border>
                               <Color>Silver</Color>
@@ -590,7 +590,6 @@
                             </Border>
                             <LeftBorder>
                               <Color>Black</Color>
-                              <Width>1pt</Width>
                             </LeftBorder>
                           </Style>
                         </Image>
@@ -661,7 +660,7 @@
           </Border>
         </Style>
       </Body>
-      <Width>200.02501mm</Width>
+      <Width>566.24995pt</Width>
       <Page>
         <PageFooter>
           <Height>2.54cm</Height>
