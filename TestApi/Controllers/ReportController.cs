@@ -13,13 +13,11 @@ namespace TestApi.Controllers
     [ApiController]
     public class ReportController : ControllerBase
     {
-            private readonly ICustomerInterface _ICustomerInterface;
-
-            public ReportController(ICustomerInterface customerInterface)
-            {
-                _ICustomerInterface = customerInterface;
-            }
-
+       private readonly ICustomerInterface _ICustomerInterface;
+       public ReportController(ICustomerInterface customerInterface)
+       {
+           _ICustomerInterface = customerInterface;
+       }
         [HttpGet, Route("GetReport")]
         public async Task<IActionResult> GetReport()
         {
