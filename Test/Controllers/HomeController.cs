@@ -4,10 +4,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
 using System.Text.Json;
 using Test.Models;
 using Testdata.Viewmodel;
 using TestData;
+using TestData.Models.Viewmodel;
 using TestServices.Utilities;
 
 namespace Test.Controllers
@@ -260,6 +262,43 @@ namespace Test.Controllers
                 return StatusCode((int)response.StatusCode, apiResponseContent);
             }
         }
+        [HttpGet]
+        public IActionResult SendMessage()
+        {
+            return View(); 
+        }
+        [HttpPost]
+        public async Task<IActionResult> SendMessage([FromBody] ChatRequest model)
+        {
+            if (model == null || string.IsNullOrWhiteSpace(model.Message))
+                return BadRequest(new { message = "Message is required" });
 
+            string token = Request.Cookies["accessToken"];
+            if (string.IsNullOrEmpty(token))
+                return Unauthorized(new { message = "Unauthorized" });
+
+            var apiUrl = "api/Chat/chat"; // your internal API route
+
+            // Prepare JSON body exactly like your API expects
+            var requestBody = new
+            {
+                model = "llama3",
+                prompt = model.Message,
+                stream = true,
+                keep_alive = "10m",
+                options = new { num_predict = 150 }
+            };
+
+            var json = JsonSerializer.Serialize(requestBody);
+            using var request = new HttpRequestMessage(HttpMethod.Post, apiUrl)
+            {
+                Content = new StringContent(json, Encoding.UTF8, "application/json")
+            };
+            request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+            var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
+            var responseContent = await response.Content.ReadAsStringAsync();
+
+            return Content(responseContent, "application/json");
+        }
     }
 }

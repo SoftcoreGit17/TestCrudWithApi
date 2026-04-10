@@ -11,7 +11,6 @@ namespace TestServices.Utilities
         private readonly Db23320Context _context;
         private readonly MailSettings _mailSettings;
         private readonly IWebHostEnvironment _env;
-
         public Customer(Db23320Context context, IOptions<MailSettings> mailSettings, IWebHostEnvironment env)
         {
             _context = context;
@@ -23,18 +22,13 @@ namespace TestServices.Utilities
             try
             {
                 string fileName = model.Profileimage; // keep old image
-
                 if (model.Image != null && model.Image.Length > 0)
                 {
                     string uploadsFolder = Path.Combine(_env.WebRootPath, "ProfileImages");
-
                     if (!Directory.Exists(uploadsFolder))
                         Directory.CreateDirectory(uploadsFolder);
-
                     fileName = Guid.NewGuid().ToString() + Path.GetExtension(model.Image.FileName);
-
                     string filePath = Path.Combine(uploadsFolder, fileName);
-
                     using (var stream = new FileStream(filePath, FileMode.Create))
                     {
                         await model.Image.CopyToAsync(stream);
@@ -52,10 +46,8 @@ namespace TestServices.Utilities
                     ? model.Profileimage // keep DB value
                     : fileName,
                 };
-
                 await _context.AddAsync(customer);
                 await _context.SaveChangesAsync();
-
                 return customer;
             }
             catch (Exception ex)
@@ -107,24 +99,17 @@ namespace TestServices.Utilities
             {
                 var data = await _context.CustomerRes
                     .FirstOrDefaultAsync(x => x.Id == model.id);
-
                 if (data == null)
                     return null;
-
                 string fileName = data.Profileimage; // ✅ get existing image from DB
-
                 // 🔥 If new image uploaded
                 if (model.Image != null && model.Image.Length > 0)
                 {
                     string uploadsFolder = Path.Combine(_env.WebRootPath, "ProfileImages");
-
                     if (!Directory.Exists(uploadsFolder))
                         Directory.CreateDirectory(uploadsFolder);
-
                     fileName = Guid.NewGuid().ToString() + Path.GetExtension(model.Image.FileName);
-
                     string filePath = Path.Combine(uploadsFolder, fileName);
-
                     using (var stream = new FileStream(filePath, FileMode.Create))
                     {
                         await model.Image.CopyToAsync(stream);
@@ -135,7 +120,6 @@ namespace TestServices.Utilities
                 {
                     fileName = Path.GetFileName(model.Profileimage);
                 }
-
                 // ✅ Update fields
                 data.CustomerName = model.CustomerName;
                 data.CustomerMobileno = model.CustomerMobileno;
@@ -143,9 +127,7 @@ namespace TestServices.Utilities
                 data.Email = model.Email;
                 data.Address = model.Address;
                 data.Profileimage = fileName; // ✅ always safe now
-
                 await _context.SaveChangesAsync();
-
                 return data;
             }
             catch (Exception ex)

@@ -1,0 +1,122 @@
+﻿@model Testdata.Viewmodel.CustomerModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "AI Chat";
+}
+<style>
+    .msg-user {
+        text-align: right;
+        margin: 10px 0;
+    }
+
+        .msg-user span {
+            background: #0dcaf0;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 15px;
+            display: inline-block;
+        }
+
+    .msg-ai {
+        text-align: left;
+        margin: 10px 0;
+    }
+
+        .msg-ai span {
+            background: #e4e6eb;
+            padding: 8px 12px;
+            border-radius: 15px;
+            display: inline-block;
+        }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<div class="container py-4">
+    <div class="card shadow-sm">
+        <div class="card-body">
+
+            <h3 class="text-center mb-4">AI Chat Assistant</h3>
+
+            <!-- Chat Box -->
+            <div id="chatBox"
+                 style="height:400px; overflow-y:auto; border:1px solid #ccc; padding:15px; background:#f9f9f9; border-radius:8px;">
+            </div>
+
+            <!-- Input -->
+            <div class="row mt-3">
+                <div class="col-md-10">
+                    <input type="text" id="chatInput" class="form-control"
+                           placeholder="Type your message..."
+                           style="border-color: #808080b0;" />
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-info w-100" id="sendBtn">Send</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    document.getElementById("sendBtn").addEventListener("click", sendMessage);
+
+       async function sendMessage() {
+        const input = document.getElementById("chatInput");
+        const chatBox = document.getElementById("chatBox");
+
+        const message = input.value.trim();
+        if (!message) return;
+
+        chatBox.innerHTML += `
+            <div class="msg-user">
+                <span>${message}</span>
+            </div>
+        `;
+
+        input.value = "";
+
+        try {
+            const res = await fetch('/Home/SendMessage', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ Message: message }) // <-- matches C# property exactly
+            });
+
+            const json = await res.json();
+
+            if (res.ok) {
+                chatBox.innerHTML += `
+                    <div class="msg-ai">
+                        <span>${json.message}</span>
+                    </div>
+                `;
+            } else {
+                chatBox.innerHTML += `
+                    <div class="msg-ai">
+                        <span style="color:red;">Error getting response</span>
+                    </div>
+                `;
+            }
+
+        } catch (err) {
+            console.error(err);
+            chatBox.innerHTML += `
+                <div class="msg-ai">
+                    <span style="color:red;">Server error</span>
+                </div>
+            `;
+        }
+
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    // Enter key support
+    document.getElementById("chatInput").addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+            e.preventDefault();
+            sendMessage();
+        }
+    });
+</script>

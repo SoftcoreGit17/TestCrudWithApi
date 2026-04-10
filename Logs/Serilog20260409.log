@@ -115,3 +115,641 @@
 [2026-04-09 16:00:16.295 +05:30  INF]  Sending file. Request path: 'favicon.ico'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\3om3alwwon-{0}-61n19gt1b8-61n19gt1b8.gz'
 [2026-04-09 16:00:16.295 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
 [2026-04-09 16:00:16.295 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/favicon.ico - 200 5463 image/x-icon 11.1094ms
+[2026-04-09 16:01:12.906 +05:30  INF]  User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2026-04-09 16:01:14.765 +05:30  INF]  Now listening on: https://localhost:7253
+[2026-04-09 16:01:14.766 +05:30  INF]  Now listening on: http://localhost:5092
+[2026-04-09 16:01:14.928 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2026-04-09 16:01:14.929 +05:30  INF]  Hosting environment: Development
+[2026-04-09 16:01:14.929 +05:30  INF]  Content root path: C:\Akanksha\Test\Test
+[2026-04-09 16:01:15.606 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/ - null null
+[2026-04-09 16:01:16.012 +05:30  INF]  Executing endpoint 'Test.Controllers.AdminController.Login (Test)'
+[2026-04-09 16:01:16.080 +05:30  INF]  Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login() on controller Test.Controllers.AdminController (Test).
+[2026-04-09 16:01:16.097 +05:30  INF]  Today was so sunny!!
+[2026-04-09 16:01:16.115 +05:30  INF]  Executing ViewResult, running view Login.
+[2026-04-09 16:01:16.208 +05:30  INF]  Executed ViewResult - view Login executed in 96.3665ms.
+[2026-04-09 16:01:16.210 +05:30  INF]  Executed action Test.Controllers.AdminController.Login (Test) in 128.861ms
+[2026-04-09 16:01:16.210 +05:30  INF]  Executed endpoint 'Test.Controllers.AdminController.Login (Test)'
+[2026-04-09 16:01:16.223 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/ - 200 null text/html; charset=utf-8 628.6706ms
+[2026-04-09 16:01:16.238 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - null null
+[2026-04-09 16:01:16.254 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 16.5211ms
+[2026-04-09 16:01:16.297 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_vs/browserLink - null null
+[2026-04-09 16:01:16.372 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.9542ms
+[2026-04-09 18:12:01.037 +05:30  INF]  User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2026-04-09 18:12:02.772 +05:30  INF]  Now listening on: https://localhost:7253
+[2026-04-09 18:12:02.773 +05:30  INF]  Now listening on: http://localhost:5092
+[2026-04-09 18:12:02.868 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2026-04-09 18:12:02.868 +05:30  INF]  Hosting environment: Development
+[2026-04-09 18:12:02.868 +05:30  INF]  Content root path: C:\Akanksha\Test\Test
+[2026-04-09 18:12:03.379 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/ - null null
+[2026-04-09 18:12:03.831 +05:30  INF]  Executing endpoint 'Test.Controllers.AdminController.Login (Test)'
+[2026-04-09 18:12:03.916 +05:30  INF]  Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login() on controller Test.Controllers.AdminController (Test).
+[2026-04-09 18:12:03.957 +05:30  INF]  Today was so sunny!!
+[2026-04-09 18:12:03.977 +05:30  INF]  Executing ViewResult, running view Login.
+[2026-04-09 18:12:04.078 +05:30  INF]  Executed ViewResult - view Login executed in 105.5423ms.
+[2026-04-09 18:12:04.081 +05:30  INF]  Executed action Test.Controllers.AdminController.Login (Test) in 161.4893ms
+[2026-04-09 18:12:04.081 +05:30  INF]  Executed endpoint 'Test.Controllers.AdminController.Login (Test)'
+[2026-04-09 18:12:04.095 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/ - 200 null text/html; charset=utf-8 726.7552ms
+[2026-04-09 18:12:04.111 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - null null
+[2026-04-09 18:12:04.144 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 33.7545ms
+[2026-04-09 18:12:04.215 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_vs/browserLink - null null
+[2026-04-09 18:12:04.363 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_vs/browserLink - 200 null text/javascript; charset=UTF-8 148.3975ms
+[2026-04-09 18:12:05.395 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7253/Admin/LoginPost - application/json 51
+[2026-04-09 18:12:05.399 +05:30  INF]  Executing endpoint 'Test.Controllers.AdminController.LoginPost (Test)'
+[2026-04-09 18:12:05.418 +05:30  INF]  Route matched with {action = "LoginPost", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginPost(Testdata.Viewmodel.Logindata) on controller Test.Controllers.AdminController (Test).
+[2026-04-09 18:12:05.486 +05:30  INF]  Start processing HTTP request POST https://localhost:7124/api/AdminLogin/Login
+[2026-04-09 18:12:05.488 +05:30  INF]  Sending HTTP request POST https://localhost:7124/api/AdminLogin/Login
+[2026-04-09 18:12:10.219 +05:30  INF]  Received HTTP response headers after 4726.3694ms - 200
+[2026-04-09 18:12:10.220 +05:30  INF]  End processing HTTP request after 4741.6707ms - 200
+[2026-04-09 18:12:10.246 +05:30  INF]  Executing OkObjectResult, writing value of type 'Testdata.Viewmodel.ResponseModel`1[[Testdata.Viewmodel.LoginModel, TestData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2026-04-09 18:12:10.255 +05:30  INF]  Executed action Test.Controllers.AdminController.LoginPost (Test) in 4836.7143ms
+[2026-04-09 18:12:10.255 +05:30  INF]  Executed endpoint 'Test.Controllers.AdminController.LoginPost (Test)'
+[2026-04-09 18:12:10.258 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7253/Admin/LoginPost - 200 null application/json; charset=utf-8 4862.616ms
+[2026-04-09 18:12:10.271 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/Home/Index - null null
+[2026-04-09 18:12:10.281 +05:30  INF]  Executing endpoint 'Test.Controllers.HomeController.Index (Test)'
+[2026-04-09 18:12:10.283 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Test.Controllers.HomeController (Test).
+[2026-04-09 18:12:10.288 +05:30  INF]  Executing ViewResult, running view Index.
+[2026-04-09 18:12:10.499 +05:30  INF]  Executed ViewResult - view Index executed in 212.4869ms.
+[2026-04-09 18:12:10.504 +05:30  INF]  Executed action Test.Controllers.HomeController.Index (Test) in 221.2941ms
+[2026-04-09 18:12:10.505 +05:30  INF]  Executed endpoint 'Test.Controllers.HomeController.Index (Test)'
+[2026-04-09 18:12:10.506 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/Home/Index - 200 null text/html; charset=utf-8 235.3258ms
+[2026-04-09 18:12:10.514 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/css/bootstrap.min.css - null null
+[2026-04-09 18:12:10.520 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:12:10.521 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+[2026-04-09 18:12:10.521 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/Test.styles.css?v=EmnE-N62tOj8JzVXhQKYMTCGaqjKFH1Y9hHHYQ1y0uE - null null
+[2026-04-09 18:12:10.522 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:12:10.522 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:12:10.567 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/css/jquery.datatables.min.css - null null
+[2026-04-09 18:12:10.570 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:12:10.575 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/jquery/dist/jquery.min.js - null null
+[2026-04-09 18:12:10.577 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:12:10.767 +05:30  INF]  Sending file. Request path: 'css/site.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\qjwi4eqh4p-{0}-b9sayid5wm-b9sayid5wm.gz'
+[2026-04-09 18:12:10.767 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:12:10.770 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 248.601ms
+[2026-04-09 18:12:10.771 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+[2026-04-09 18:12:10.771 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/js/site.js?v=6Sa0HzRKMpj-CyPazi3nW7T-7JeGevso9lr7TIvx9PY - null null
+[2026-04-09 18:12:10.772 +05:30  INF]  Sending file. Request path: 'Test.styles.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\n2e975ve3f-{0}-ahkl0fq8f9-ahkl0fq8f9.gz'
+[2026-04-09 18:12:10.772 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:12:10.772 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/Test.styles.css?v=EmnE-N62tOj8JzVXhQKYMTCGaqjKFH1Y9hHHYQ1y0uE - 200 1142 text/css 250.5047ms
+[2026-04-09 18:12:10.772 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/js/jquery.datatables.min.js - null null
+[2026-04-09 18:12:10.772 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:12:10.773 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:12:10.773 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:12:10.775 +05:30  INF]  Sending file. Request path: 'js/site.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\5338nyzxdi-{0}-n0sxxbs1h7-n0sxxbs1h7.gz'
+[2026-04-09 18:12:10.775 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:12:10.775 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/js/site.js?v=6Sa0HzRKMpj-CyPazi3nW7T-7JeGevso9lr7TIvx9PY - 200 1607 text/javascript 4.1331ms
+[2026-04-09 18:12:10.776 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - null null
+[2026-04-09 18:12:10.900 +05:30  INF]  Sending file. Request path: 'css/jquery.dataTables.min.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\hkn0i1k4u0-{0}-x0ipjb9j10-x0ipjb9j10.gz'
+[2026-04-09 18:12:10.907 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:12:10.908 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/css/jquery.datatables.min.css - 200 29077 text/css 382.8349ms
+[2026-04-09 18:12:10.909 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_vs/browserLink - null null
+[2026-04-09 18:12:10.915 +05:30  INF]  Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\nvt6kn2274-{0}-46ein0sx1k-46ein0sx1k.gz'
+[2026-04-09 18:12:10.915 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:12:10.915 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 401.9483ms
+[2026-04-09 18:12:10.916 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 139.6321ms
+[2026-04-09 18:12:10.947 +05:30  INF]  Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\bbrjc4pj7k-{0}-493y06b0oq-493y06b0oq.gz'
+[2026-04-09 18:12:10.947 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:12:10.948 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 176.8607ms
+[2026-04-09 18:12:10.954 +05:30  INF]  Sending file. Request path: 'js/jquery.dataTables.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\4m91129lxn-{0}-lp9u3th1pw-lp9u3th1pw.gz'
+[2026-04-09 18:12:10.955 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:12:10.955 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/js/jquery.datatables.min.js - 200 103579 text/javascript 182.7174ms
+[2026-04-09 18:12:10.964 +05:30  INF]  Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\af982hj7nl-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+[2026-04-09 18:12:10.964 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:12:10.964 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 389.428ms
+[2026-04-09 18:12:11.029 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_vs/browserLink - 200 null text/javascript; charset=UTF-8 120.4729ms
+[2026-04-09 18:12:17.413 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/Home/SendMessage - null null
+[2026-04-09 18:12:17.429 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/Home/SendMessage - 404 0 null 16.5546ms
+[2026-04-09 18:12:17.430 +05:30  INF]  Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7253/Home/SendMessage, Response status code: 404
+[2026-04-09 18:13:33.622 +05:30  INF]  User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2026-04-09 18:13:35.676 +05:30  INF]  Now listening on: https://localhost:7253
+[2026-04-09 18:13:35.679 +05:30  INF]  Now listening on: http://localhost:5092
+[2026-04-09 18:13:35.831 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2026-04-09 18:13:35.832 +05:30  INF]  Hosting environment: Development
+[2026-04-09 18:13:35.832 +05:30  INF]  Content root path: C:\Akanksha\Test\Test
+[2026-04-09 18:13:36.952 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/ - null null
+[2026-04-09 18:13:38.147 +05:30  INF]  Executing endpoint 'Test.Controllers.AdminController.Login (Test)'
+[2026-04-09 18:13:38.268 +05:30  INF]  Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login() on controller Test.Controllers.AdminController (Test).
+[2026-04-09 18:13:38.299 +05:30  INF]  Today was so sunny!!
+[2026-04-09 18:13:38.322 +05:30  INF]  Executing ViewResult, running view Login.
+[2026-04-09 18:13:38.435 +05:30  INF]  Executed ViewResult - view Login executed in 121.6813ms.
+[2026-04-09 18:13:38.438 +05:30  INF]  Executed action Test.Controllers.AdminController.Login (Test) in 168.7203ms
+[2026-04-09 18:13:38.439 +05:30  INF]  Executed endpoint 'Test.Controllers.AdminController.Login (Test)'
+[2026-04-09 18:13:38.448 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/ - 200 null text/html; charset=utf-8 1505.8035ms
+[2026-04-09 18:13:38.465 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - null null
+[2026-04-09 18:13:38.484 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 18.6088ms
+[2026-04-09 18:13:38.562 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_vs/browserLink - null null
+[2026-04-09 18:13:38.719 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_vs/browserLink - 200 null text/javascript; charset=UTF-8 156.8536ms
+[2026-04-09 18:13:49.723 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7253/Admin/LoginPost - application/json 51
+[2026-04-09 18:13:49.725 +05:30  INF]  Executing endpoint 'Test.Controllers.AdminController.LoginPost (Test)'
+[2026-04-09 18:13:49.742 +05:30  INF]  Route matched with {action = "LoginPost", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginPost(Testdata.Viewmodel.Logindata) on controller Test.Controllers.AdminController (Test).
+[2026-04-09 18:13:49.786 +05:30  INF]  Start processing HTTP request POST https://localhost:7124/api/AdminLogin/Login
+[2026-04-09 18:13:49.787 +05:30  INF]  Sending HTTP request POST https://localhost:7124/api/AdminLogin/Login
+[2026-04-09 18:13:53.162 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7253/Admin/LoginPost - application/json 51
+[2026-04-09 18:13:53.167 +05:30  INF]  Executing endpoint 'Test.Controllers.AdminController.LoginPost (Test)'
+[2026-04-09 18:13:53.167 +05:30  INF]  Route matched with {action = "LoginPost", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginPost(Testdata.Viewmodel.Logindata) on controller Test.Controllers.AdminController (Test).
+[2026-04-09 18:13:53.168 +05:30  INF]  Start processing HTTP request POST https://localhost:7124/api/AdminLogin/Login
+[2026-04-09 18:13:53.168 +05:30  INF]  Sending HTTP request POST https://localhost:7124/api/AdminLogin/Login
+[2026-04-09 18:13:53.670 +05:30  INF]  Received HTTP response headers after 3878.6428ms - 200
+[2026-04-09 18:13:53.671 +05:30  INF]  End processing HTTP request after 3888.0428ms - 200
+[2026-04-09 18:13:53.690 +05:30  INF]  Executing OkObjectResult, writing value of type 'Testdata.Viewmodel.ResponseModel`1[[Testdata.Viewmodel.LoginModel, TestData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2026-04-09 18:13:53.695 +05:30  INF]  Executed action Test.Controllers.AdminController.LoginPost (Test) in 3952.6774ms
+[2026-04-09 18:13:53.696 +05:30  INF]  Executed endpoint 'Test.Controllers.AdminController.LoginPost (Test)'
+[2026-04-09 18:13:53.697 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7253/Admin/LoginPost - 200 null application/json; charset=utf-8 3974.8343ms
+[2026-04-09 18:13:53.715 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/Home/Index - null null
+[2026-04-09 18:13:53.721 +05:30  INF]  Executing endpoint 'Test.Controllers.HomeController.Index (Test)'
+[2026-04-09 18:13:53.723 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Test.Controllers.HomeController (Test).
+[2026-04-09 18:13:53.727 +05:30  INF]  Executing ViewResult, running view Index.
+[2026-04-09 18:13:53.831 +05:30  INF]  Executed ViewResult - view Index executed in 104.9739ms.
+[2026-04-09 18:13:53.835 +05:30  INF]  Executed action Test.Controllers.HomeController.Index (Test) in 112.1828ms
+[2026-04-09 18:13:53.836 +05:30  INF]  Executed endpoint 'Test.Controllers.HomeController.Index (Test)'
+[2026-04-09 18:13:53.845 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/Home/Index - 200 null text/html; charset=utf-8 129.4804ms
+[2026-04-09 18:13:53.860 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/css/bootstrap.min.css - null null
+[2026-04-09 18:13:53.869 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+[2026-04-09 18:13:53.869 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:13:53.869 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:13:53.870 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/Test.styles.css?v=EmnE-N62tOj8JzVXhQKYMTCGaqjKFH1Y9hHHYQ1y0uE - null null
+[2026-04-09 18:13:53.871 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:13:53.896 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/css/jquery.datatables.min.css - null null
+[2026-04-09 18:13:53.929 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:13:53.929 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - null null
+[2026-04-09 18:13:53.930 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/jquery/dist/jquery.min.js - null null
+[2026-04-09 18:13:53.932 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:13:53.938 +05:30  INF]  Sending file. Request path: 'Test.styles.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\n2e975ve3f-{0}-ahkl0fq8f9-ahkl0fq8f9.gz'
+[2026-04-09 18:13:53.939 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:13:53.939 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/Test.styles.css?v=EmnE-N62tOj8JzVXhQKYMTCGaqjKFH1Y9hHHYQ1y0uE - 200 1142 text/css 68.8238ms
+[2026-04-09 18:13:53.939 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+[2026-04-09 18:13:53.940 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:13:53.944 +05:30  INF]  Sending file. Request path: 'css/site.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\qjwi4eqh4p-{0}-b9sayid5wm-b9sayid5wm.gz'
+[2026-04-09 18:13:53.944 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:13:53.944 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 75.4818ms
+[2026-04-09 18:13:53.945 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/js/site.js?v=6Sa0HzRKMpj-CyPazi3nW7T-7JeGevso9lr7TIvx9PY - null null
+[2026-04-09 18:13:53.945 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:13:53.946 +05:30  INF]  Sending file. Request path: 'js/site.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\5338nyzxdi-{0}-n0sxxbs1h7-n0sxxbs1h7.gz'
+[2026-04-09 18:13:53.947 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:13:53.947 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/js/site.js?v=6Sa0HzRKMpj-CyPazi3nW7T-7JeGevso9lr7TIvx9PY - 200 1607 text/javascript 2.0324ms
+[2026-04-09 18:13:53.949 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/js/jquery.datatables.min.js - null null
+[2026-04-09 18:13:53.950 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:13:53.956 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 26.5286ms
+[2026-04-09 18:13:53.956 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_vs/browserLink - null null
+[2026-04-09 18:13:54.001 +05:30  INF]  Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\nvt6kn2274-{0}-46ein0sx1k-46ein0sx1k.gz'
+[2026-04-09 18:13:54.002 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:13:54.002 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 142.435ms
+[2026-04-09 18:13:54.006 +05:30  INF]  Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\af982hj7nl-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+[2026-04-09 18:13:54.006 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:13:54.006 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 76.442ms
+[2026-04-09 18:13:54.009 +05:30  INF]  Sending file. Request path: 'js/jquery.dataTables.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\4m91129lxn-{0}-lp9u3th1pw-lp9u3th1pw.gz'
+[2026-04-09 18:13:54.010 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:13:54.010 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/js/jquery.datatables.min.js - 200 103579 text/javascript 61.0841ms
+[2026-04-09 18:13:54.011 +05:30  INF]  Sending file. Request path: 'css/jquery.dataTables.min.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\hkn0i1k4u0-{0}-x0ipjb9j10-x0ipjb9j10.gz'
+[2026-04-09 18:13:54.011 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:13:54.012 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/css/jquery.datatables.min.css - 200 29077 text/css 116.1489ms
+[2026-04-09 18:13:54.012 +05:30  INF]  Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\bbrjc4pj7k-{0}-493y06b0oq-493y06b0oq.gz'
+[2026-04-09 18:13:54.013 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:13:54.013 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 73.8067ms
+[2026-04-09 18:13:54.060 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_vs/browserLink - 200 null text/javascript; charset=UTF-8 103.4613ms
+[2026-04-09 18:13:54.392 +05:30  INF]  Received HTTP response headers after 1224.146ms - 200
+[2026-04-09 18:13:54.393 +05:30  INF]  End processing HTTP request after 1224.6578ms - 200
+[2026-04-09 18:13:54.394 +05:30  INF]  Executing OkObjectResult, writing value of type 'Testdata.Viewmodel.ResponseModel`1[[Testdata.Viewmodel.LoginModel, TestData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2026-04-09 18:13:54.400 +05:30  INF]  Executed action Test.Controllers.AdminController.LoginPost (Test) in 1232.3455ms
+[2026-04-09 18:13:54.400 +05:30  INF]  Executed endpoint 'Test.Controllers.AdminController.LoginPost (Test)'
+[2026-04-09 18:13:54.400 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7253/Admin/LoginPost - 499 null application/json; charset=utf-8 1237.5107ms
+[2026-04-09 18:13:58.970 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/Home/SendMessage - null null
+[2026-04-09 18:13:58.978 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/Home/SendMessage - 404 0 null 7.9886ms
+[2026-04-09 18:13:58.980 +05:30  INF]  Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7253/Home/SendMessage, Response status code: 404
+[2026-04-09 18:15:20.868 +05:30  INF]  User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2026-04-09 18:15:23.109 +05:30  INF]  Now listening on: https://localhost:7253
+[2026-04-09 18:15:23.110 +05:30  INF]  Now listening on: http://localhost:5092
+[2026-04-09 18:15:23.230 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2026-04-09 18:15:23.230 +05:30  INF]  Hosting environment: Development
+[2026-04-09 18:15:23.230 +05:30  INF]  Content root path: C:\Akanksha\Test\Test
+[2026-04-09 18:15:24.450 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/ - null null
+[2026-04-09 18:15:25.076 +05:30  INF]  Executing endpoint 'Test.Controllers.AdminController.Login (Test)'
+[2026-04-09 18:15:25.144 +05:30  INF]  Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login() on controller Test.Controllers.AdminController (Test).
+[2026-04-09 18:15:25.163 +05:30  INF]  Today was so sunny!!
+[2026-04-09 18:15:25.182 +05:30  INF]  Executing ViewResult, running view Login.
+[2026-04-09 18:15:25.285 +05:30  INF]  Executed ViewResult - view Login executed in 109.2174ms.
+[2026-04-09 18:15:25.286 +05:30  INF]  Executed action Test.Controllers.AdminController.Login (Test) in 141.2061ms
+[2026-04-09 18:15:25.287 +05:30  INF]  Executed endpoint 'Test.Controllers.AdminController.Login (Test)'
+[2026-04-09 18:15:25.291 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/ - 200 null text/html; charset=utf-8 851.6254ms
+[2026-04-09 18:15:25.369 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - null null
+[2026-04-09 18:15:25.398 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 29.1037ms
+[2026-04-09 18:15:25.449 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_vs/browserLink - null null
+[2026-04-09 18:15:25.569 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_vs/browserLink - 200 null text/javascript; charset=UTF-8 119.9235ms
+[2026-04-09 18:15:26.594 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7253/Admin/LoginPost - application/json 51
+[2026-04-09 18:15:26.599 +05:30  INF]  Executing endpoint 'Test.Controllers.AdminController.LoginPost (Test)'
+[2026-04-09 18:15:26.616 +05:30  INF]  Route matched with {action = "LoginPost", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginPost(Testdata.Viewmodel.Logindata) on controller Test.Controllers.AdminController (Test).
+[2026-04-09 18:15:26.681 +05:30  INF]  Start processing HTTP request POST https://localhost:7124/api/AdminLogin/Login
+[2026-04-09 18:15:26.683 +05:30  INF]  Sending HTTP request POST https://localhost:7124/api/AdminLogin/Login
+[2026-04-09 18:15:31.635 +05:30  INF]  Received HTTP response headers after 4948.7317ms - 200
+[2026-04-09 18:15:31.636 +05:30  INF]  End processing HTTP request after 4959.1172ms - 200
+[2026-04-09 18:15:31.656 +05:30  INF]  Executing OkObjectResult, writing value of type 'Testdata.Viewmodel.ResponseModel`1[[Testdata.Viewmodel.LoginModel, TestData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2026-04-09 18:15:31.661 +05:30  INF]  Executed action Test.Controllers.AdminController.LoginPost (Test) in 5044.2794ms
+[2026-04-09 18:15:31.664 +05:30  INF]  Executed endpoint 'Test.Controllers.AdminController.LoginPost (Test)'
+[2026-04-09 18:15:31.667 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7253/Admin/LoginPost - 200 null application/json; charset=utf-8 5072.5076ms
+[2026-04-09 18:15:31.683 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/Home/Index - null null
+[2026-04-09 18:15:31.698 +05:30  INF]  Executing endpoint 'Test.Controllers.HomeController.Index (Test)'
+[2026-04-09 18:15:31.699 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Test.Controllers.HomeController (Test).
+[2026-04-09 18:15:31.705 +05:30  INF]  Executing ViewResult, running view Index.
+[2026-04-09 18:15:31.893 +05:30  INF]  Executed ViewResult - view Index executed in 188.674ms.
+[2026-04-09 18:15:31.904 +05:30  INF]  Executed action Test.Controllers.HomeController.Index (Test) in 204.7029ms
+[2026-04-09 18:15:31.904 +05:30  INF]  Executed endpoint 'Test.Controllers.HomeController.Index (Test)'
+[2026-04-09 18:15:31.904 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/Home/Index - 200 null text/html; charset=utf-8 221.4771ms
+[2026-04-09 18:15:31.922 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/css/bootstrap.min.css - null null
+[2026-04-09 18:15:31.928 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/Test.styles.css?v=EmnE-N62tOj8JzVXhQKYMTCGaqjKFH1Y9hHHYQ1y0uE - null null
+[2026-04-09 18:15:31.929 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:31.929 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:31.929 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+[2026-04-09 18:15:31.930 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:31.933 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/css/jquery.datatables.min.css - null null
+[2026-04-09 18:15:31.934 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:31.935 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/jquery/dist/jquery.min.js - null null
+[2026-04-09 18:15:31.938 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:31.957 +05:30  INF]  Sending file. Request path: 'Test.styles.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\n2e975ve3f-{0}-ahkl0fq8f9-ahkl0fq8f9.gz'
+[2026-04-09 18:15:31.957 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:31.957 +05:30  INF]  Sending file. Request path: 'css/site.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\qjwi4eqh4p-{0}-b9sayid5wm-b9sayid5wm.gz'
+[2026-04-09 18:15:31.957 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:31.958 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/Test.styles.css?v=EmnE-N62tOj8JzVXhQKYMTCGaqjKFH1Y9hHHYQ1y0uE - 200 1142 text/css 29.1104ms
+[2026-04-09 18:15:31.958 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 28.276ms
+[2026-04-09 18:15:31.958 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+[2026-04-09 18:15:31.958 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/js/site.js?v=6Sa0HzRKMpj-CyPazi3nW7T-7JeGevso9lr7TIvx9PY - null null
+[2026-04-09 18:15:31.958 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:31.959 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:31.960 +05:30  INF]  Sending file. Request path: 'js/site.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\5338nyzxdi-{0}-n0sxxbs1h7-n0sxxbs1h7.gz'
+[2026-04-09 18:15:31.960 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:31.960 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/js/site.js?v=6Sa0HzRKMpj-CyPazi3nW7T-7JeGevso9lr7TIvx9PY - 200 1607 text/javascript 1.7013ms
+[2026-04-09 18:15:31.961 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/js/jquery.datatables.min.js - null null
+[2026-04-09 18:15:31.963 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - null null
+[2026-04-09 18:15:31.964 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_vs/browserLink - null null
+[2026-04-09 18:15:31.965 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:31.979 +05:30  INF]  Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\af982hj7nl-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+[2026-04-09 18:15:31.980 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:31.980 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 44.7259ms
+[2026-04-09 18:15:31.982 +05:30  INF]  Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\bbrjc4pj7k-{0}-493y06b0oq-493y06b0oq.gz'
+[2026-04-09 18:15:31.982 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:31.983 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 24.9088ms
+[2026-04-09 18:15:31.983 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 19.6803ms
+[2026-04-09 18:15:31.983 +05:30  INF]  Sending file. Request path: 'css/jquery.dataTables.min.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\hkn0i1k4u0-{0}-x0ipjb9j10-x0ipjb9j10.gz'
+[2026-04-09 18:15:31.983 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:31.984 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/css/jquery.datatables.min.css - 200 29077 text/css 50.6598ms
+[2026-04-09 18:15:31.987 +05:30  INF]  Sending file. Request path: 'js/jquery.dataTables.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\4m91129lxn-{0}-lp9u3th1pw-lp9u3th1pw.gz'
+[2026-04-09 18:15:31.988 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:31.988 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/js/jquery.datatables.min.js - 200 103579 text/javascript 27.8039ms
+[2026-04-09 18:15:32.001 +05:30  INF]  Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\nvt6kn2274-{0}-46ein0sx1k-46ein0sx1k.gz'
+[2026-04-09 18:15:32.012 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:32.012 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 90.0109ms
+[2026-04-09 18:15:32.060 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_vs/browserLink - 200 null text/javascript; charset=UTF-8 96.4225ms
+[2026-04-09 18:15:38.552 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/Home/SendMessage - null null
+[2026-04-09 18:15:38.559 +05:30  INF]  Executing endpoint 'Test.Controllers.HomeController.SendMessage (Test)'
+[2026-04-09 18:15:38.562 +05:30  INF]  Route matched with {action = "SendMessage", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SendMessage() on controller Test.Controllers.HomeController (Test).
+[2026-04-09 18:15:38.564 +05:30  INF]  Executing ViewResult, running view SendMessage.
+[2026-04-09 18:15:38.579 +05:30  INF]  Executed ViewResult - view SendMessage executed in 15.9511ms.
+[2026-04-09 18:15:38.579 +05:30  INF]  Executed action Test.Controllers.HomeController.SendMessage (Test) in 16.6004ms
+[2026-04-09 18:15:38.579 +05:30  INF]  Executed endpoint 'Test.Controllers.HomeController.SendMessage (Test)'
+[2026-04-09 18:15:38.579 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/Home/SendMessage - 200 null text/html; charset=utf-8 27.2661ms
+[2026-04-09 18:15:38.625 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/css/bootstrap.min.css - null null
+[2026-04-09 18:15:38.628 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+[2026-04-09 18:15:38.629 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:38.634 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/Test.styles.css?v=EmnE-N62tOj8JzVXhQKYMTCGaqjKFH1Y9hHHYQ1y0uE - null null
+[2026-04-09 18:15:38.634 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:38.635 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:38.635 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/css/jquery.datatables.min.css - null null
+[2026-04-09 18:15:38.636 +05:30  INF]  Sending file. Request path: 'css/site.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\qjwi4eqh4p-{0}-b9sayid5wm-b9sayid5wm.gz'
+[2026-04-09 18:15:38.636 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:38.636 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 8.1176ms
+[2026-04-09 18:15:38.636 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:38.637 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - null null
+[2026-04-09 18:15:38.637 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/jquery/dist/jquery.min.js - null null
+[2026-04-09 18:15:38.638 +05:30  INF]  Sending file. Request path: 'Test.styles.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\n2e975ve3f-{0}-ahkl0fq8f9-ahkl0fq8f9.gz'
+[2026-04-09 18:15:38.638 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:38.638 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/Test.styles.css?v=EmnE-N62tOj8JzVXhQKYMTCGaqjKFH1Y9hHHYQ1y0uE - 200 1142 text/css 4.5918ms
+[2026-04-09 18:15:38.638 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+[2026-04-09 18:15:38.639 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/js/site.js?v=6Sa0HzRKMpj-CyPazi3nW7T-7JeGevso9lr7TIvx9PY - null null
+[2026-04-09 18:15:38.640 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:38.641 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 4.3184ms
+[2026-04-09 18:15:38.642 +05:30  INF]  Sending file. Request path: 'css/jquery.dataTables.min.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\hkn0i1k4u0-{0}-x0ipjb9j10-x0ipjb9j10.gz'
+[2026-04-09 18:15:38.642 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:38.642 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/css/jquery.datatables.min.css - 200 29077 text/css 7.4992ms
+[2026-04-09 18:15:38.643 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/js/jquery.datatables.min.js - null null
+[2026-04-09 18:15:38.643 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:38.647 +05:30  INF]  Sending file. Request path: 'js/site.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\5338nyzxdi-{0}-n0sxxbs1h7-n0sxxbs1h7.gz'
+[2026-04-09 18:15:38.648 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:38.648 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/js/site.js?v=6Sa0HzRKMpj-CyPazi3nW7T-7JeGevso9lr7TIvx9PY - 200 1607 text/javascript 8.1922ms
+[2026-04-09 18:15:38.648 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_vs/browserLink - null null
+[2026-04-09 18:15:38.654 +05:30  INF]  Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\nvt6kn2274-{0}-46ein0sx1k-46ein0sx1k.gz'
+[2026-04-09 18:15:38.654 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:38.654 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 28.9574ms
+[2026-04-09 18:15:38.658 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:38.659 +05:30  INF]  Sending file. Request path: 'js/jquery.dataTables.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\4m91129lxn-{0}-lp9u3th1pw-lp9u3th1pw.gz'
+[2026-04-09 18:15:38.659 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:38.659 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/js/jquery.datatables.min.js - 200 103579 text/javascript 16.3824ms
+[2026-04-09 18:15:38.662 +05:30  INF]  Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\af982hj7nl-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+[2026-04-09 18:15:38.662 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:38.662 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 24.829ms
+[2026-04-09 18:15:38.709 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_vs/browserLink - 200 null text/javascript; charset=UTF-8 61.22ms
+[2026-04-09 18:15:38.740 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:38.744 +05:30  INF]  Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\bbrjc4pj7k-{0}-493y06b0oq-493y06b0oq.gz'
+[2026-04-09 18:15:38.744 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:15:38.744 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 106.2223ms
+[2026-04-09 18:15:45.852 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7253/Home/SendMessage - application/json 17
+[2026-04-09 18:15:45.852 +05:30  INF]  Executing endpoint 'Test.Controllers.HomeController.SendMessage (Test)'
+[2026-04-09 18:15:45.864 +05:30  INF]  Route matched with {action = "SendMessage", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendMessage(TestData.Models.Viewmodel.ChatRequest) on controller Test.Controllers.HomeController (Test).
+[2026-04-09 18:15:55.278 +05:30  INF]  Start processing HTTP request POST https://localhost:7124/api/chat
+[2026-04-09 18:15:55.279 +05:30  INF]  Sending HTTP request POST https://localhost:7124/api/chat
+[2026-04-09 18:15:55.317 +05:30  INF]  Received HTTP response headers after 38.5101ms - 404
+[2026-04-09 18:15:55.317 +05:30  INF]  End processing HTTP request after 38.8445ms - 404
+[2026-04-09 18:15:55.321 +05:30  INF]  Executing ContentResult with HTTP Response ContentType of application/json
+[2026-04-09 18:15:55.321 +05:30  INF]  Executed action Test.Controllers.HomeController.SendMessage (Test) in 9456.8848ms
+[2026-04-09 18:15:55.321 +05:30  INF]  Executed endpoint 'Test.Controllers.HomeController.SendMessage (Test)'
+[2026-04-09 18:15:55.321 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7253/Home/SendMessage - 200 0 application/json 9469.2306ms
+[2026-04-09 18:16:32.274 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7253/Home/SendMessage - application/json 17
+[2026-04-09 18:16:32.274 +05:30  INF]  Executing endpoint 'Test.Controllers.HomeController.SendMessage (Test)'
+[2026-04-09 18:16:32.301 +05:30  INF]  Route matched with {action = "SendMessage", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendMessage(TestData.Models.Viewmodel.ChatRequest) on controller Test.Controllers.HomeController (Test).
+[2026-04-09 18:16:34.678 +05:30  INF]  Start processing HTTP request POST https://localhost:7124/api/chat
+[2026-04-09 18:16:34.678 +05:30  INF]  Sending HTTP request POST https://localhost:7124/api/chat
+[2026-04-09 18:16:34.692 +05:30  INF]  Received HTTP response headers after 13.6372ms - 404
+[2026-04-09 18:16:34.693 +05:30  INF]  End processing HTTP request after 14.9146ms - 404
+[2026-04-09 18:29:42.763 +05:30  INF]  User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2026-04-09 18:29:44.557 +05:30  INF]  Now listening on: https://localhost:7253
+[2026-04-09 18:29:44.559 +05:30  INF]  Now listening on: http://localhost:5092
+[2026-04-09 18:29:44.621 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2026-04-09 18:29:44.621 +05:30  INF]  Hosting environment: Development
+[2026-04-09 18:29:44.621 +05:30  INF]  Content root path: C:\Akanksha\Test\Test
+[2026-04-09 18:29:45.308 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/ - null null
+[2026-04-09 18:29:45.806 +05:30  INF]  Executing endpoint 'Test.Controllers.AdminController.Login (Test)'
+[2026-04-09 18:29:45.874 +05:30  INF]  Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login() on controller Test.Controllers.AdminController (Test).
+[2026-04-09 18:29:45.903 +05:30  INF]  Today was so sunny!!
+[2026-04-09 18:29:45.937 +05:30  INF]  Executing ViewResult, running view Login.
+[2026-04-09 18:29:46.050 +05:30  INF]  Executed ViewResult - view Login executed in 133.398ms.
+[2026-04-09 18:29:46.052 +05:30  INF]  Executed action Test.Controllers.AdminController.Login (Test) in 176.3522ms
+[2026-04-09 18:29:46.052 +05:30  INF]  Executed endpoint 'Test.Controllers.AdminController.Login (Test)'
+[2026-04-09 18:29:46.093 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/ - 200 null text/html; charset=utf-8 794.1448ms
+[2026-04-09 18:29:46.107 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - null null
+[2026-04-09 18:29:46.126 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 18.8665ms
+[2026-04-09 18:29:46.165 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_vs/browserLink - null null
+[2026-04-09 18:29:46.292 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_vs/browserLink - 200 null text/javascript; charset=UTF-8 126.7698ms
+[2026-04-09 18:29:47.323 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7253/Admin/LoginPost - application/json 51
+[2026-04-09 18:29:47.325 +05:30  INF]  Executing endpoint 'Test.Controllers.AdminController.LoginPost (Test)'
+[2026-04-09 18:29:47.337 +05:30  INF]  Route matched with {action = "LoginPost", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginPost(Testdata.Viewmodel.Logindata) on controller Test.Controllers.AdminController (Test).
+[2026-04-09 18:29:47.380 +05:30  INF]  Start processing HTTP request POST https://localhost:7124/api/AdminLogin/Login
+[2026-04-09 18:29:47.383 +05:30  INF]  Sending HTTP request POST https://localhost:7124/api/AdminLogin/Login
+[2026-04-09 18:29:51.339 +05:30  INF]  Received HTTP response headers after 3951.6856ms - 200
+[2026-04-09 18:29:51.340 +05:30  INF]  End processing HTTP request after 3966.3719ms - 200
+[2026-04-09 18:29:51.359 +05:30  INF]  Executing OkObjectResult, writing value of type 'Testdata.Viewmodel.ResponseModel`1[[Testdata.Viewmodel.LoginModel, TestData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2026-04-09 18:29:51.365 +05:30  INF]  Executed action Test.Controllers.AdminController.LoginPost (Test) in 4028.0285ms
+[2026-04-09 18:29:51.365 +05:30  INF]  Executed endpoint 'Test.Controllers.AdminController.LoginPost (Test)'
+[2026-04-09 18:29:51.367 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7253/Admin/LoginPost - 200 null application/json; charset=utf-8 4044.3839ms
+[2026-04-09 18:29:51.378 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/Home/Index - null null
+[2026-04-09 18:29:51.388 +05:30  INF]  Executing endpoint 'Test.Controllers.HomeController.Index (Test)'
+[2026-04-09 18:29:51.389 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Test.Controllers.HomeController (Test).
+[2026-04-09 18:29:51.394 +05:30  INF]  Executing ViewResult, running view Index.
+[2026-04-09 18:29:51.604 +05:30  INF]  Executed ViewResult - view Index executed in 211.3802ms.
+[2026-04-09 18:29:51.609 +05:30  INF]  Executed action Test.Controllers.HomeController.Index (Test) in 219.0025ms
+[2026-04-09 18:29:51.609 +05:30  INF]  Executed endpoint 'Test.Controllers.HomeController.Index (Test)'
+[2026-04-09 18:29:51.610 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/Home/Index - 200 null text/html; charset=utf-8 231.8175ms
+[2026-04-09 18:29:51.616 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/css/bootstrap.min.css - null null
+[2026-04-09 18:29:51.622 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:51.623 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+[2026-04-09 18:29:51.623 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:51.625 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/Test.styles.css?v=EmnE-N62tOj8JzVXhQKYMTCGaqjKFH1Y9hHHYQ1y0uE - null null
+[2026-04-09 18:29:51.625 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:51.628 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/css/jquery.datatables.min.css - null null
+[2026-04-09 18:29:51.628 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:51.686 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/jquery/dist/jquery.min.js - null null
+[2026-04-09 18:29:51.688 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:51.727 +05:30  INF]  Sending file. Request path: 'css/site.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\qjwi4eqh4p-{0}-b9sayid5wm-b9sayid5wm.gz'
+[2026-04-09 18:29:51.728 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:51.728 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 104.9199ms
+[2026-04-09 18:29:51.728 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+[2026-04-09 18:29:51.729 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:51.736 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/js/site.js?v=6Sa0HzRKMpj-CyPazi3nW7T-7JeGevso9lr7TIvx9PY - null null
+[2026-04-09 18:29:51.737 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:51.739 +05:30  INF]  Sending file. Request path: 'js/site.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\5338nyzxdi-{0}-n0sxxbs1h7-n0sxxbs1h7.gz'
+[2026-04-09 18:29:51.739 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:51.739 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/js/site.js?v=6Sa0HzRKMpj-CyPazi3nW7T-7JeGevso9lr7TIvx9PY - 200 1607 text/javascript 3.1979ms
+[2026-04-09 18:29:51.740 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/js/jquery.datatables.min.js - null null
+[2026-04-09 18:29:51.747 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:51.773 +05:30  INF]  Sending file. Request path: 'Test.styles.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\n2e975ve3f-{0}-ahkl0fq8f9-ahkl0fq8f9.gz'
+[2026-04-09 18:29:51.779 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:51.865 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/Test.styles.css?v=EmnE-N62tOj8JzVXhQKYMTCGaqjKFH1Y9hHHYQ1y0uE - 200 1142 text/css 240.6058ms
+[2026-04-09 18:29:51.865 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_vs/browserLink - null null
+[2026-04-09 18:29:51.866 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - null null
+[2026-04-09 18:29:51.930 +05:30  INF]  Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\nvt6kn2274-{0}-46ein0sx1k-46ein0sx1k.gz'
+[2026-04-09 18:29:51.931 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:51.931 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 315.3146ms
+[2026-04-09 18:29:51.933 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 66.5004ms
+[2026-04-09 18:29:51.935 +05:30  INF]  Sending file. Request path: 'css/jquery.dataTables.min.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\hkn0i1k4u0-{0}-x0ipjb9j10-x0ipjb9j10.gz'
+[2026-04-09 18:29:51.935 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:51.936 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/css/jquery.datatables.min.css - 200 29077 text/css 308.2413ms
+[2026-04-09 18:29:51.938 +05:30  INF]  Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\bbrjc4pj7k-{0}-493y06b0oq-493y06b0oq.gz'
+[2026-04-09 18:29:51.938 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:51.939 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 210.348ms
+[2026-04-09 18:29:51.939 +05:30  INF]  Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\af982hj7nl-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+[2026-04-09 18:29:51.939 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:51.939 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 257.3586ms
+[2026-04-09 18:29:51.970 +05:30  INF]  Sending file. Request path: 'js/jquery.dataTables.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\4m91129lxn-{0}-lp9u3th1pw-lp9u3th1pw.gz'
+[2026-04-09 18:29:51.971 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:51.971 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/js/jquery.datatables.min.js - 200 103579 text/javascript 230.623ms
+[2026-04-09 18:29:51.984 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_vs/browserLink - 200 null text/javascript; charset=UTF-8 118.433ms
+[2026-04-09 18:29:57.009 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/Home/SendMessage - null null
+[2026-04-09 18:29:57.013 +05:30  INF]  Executing endpoint 'Test.Controllers.HomeController.SendMessage (Test)'
+[2026-04-09 18:29:57.015 +05:30  INF]  Route matched with {action = "SendMessage", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SendMessage() on controller Test.Controllers.HomeController (Test).
+[2026-04-09 18:29:57.017 +05:30  INF]  Executing ViewResult, running view SendMessage.
+[2026-04-09 18:29:57.023 +05:30  INF]  Executed ViewResult - view SendMessage executed in 7.534ms.
+[2026-04-09 18:29:57.024 +05:30  INF]  Executed action Test.Controllers.HomeController.SendMessage (Test) in 8.1185ms
+[2026-04-09 18:29:57.024 +05:30  INF]  Executed endpoint 'Test.Controllers.HomeController.SendMessage (Test)'
+[2026-04-09 18:29:57.024 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/Home/SendMessage - 200 null text/html; charset=utf-8 15.3917ms
+[2026-04-09 18:29:57.075 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/css/bootstrap.min.css - null null
+[2026-04-09 18:29:57.076 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+[2026-04-09 18:29:57.078 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/Test.styles.css?v=EmnE-N62tOj8JzVXhQKYMTCGaqjKFH1Y9hHHYQ1y0uE - null null
+[2026-04-09 18:29:57.078 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:57.079 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:57.081 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:57.081 +05:30  INF]  Sending file. Request path: 'Test.styles.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\n2e975ve3f-{0}-ahkl0fq8f9-ahkl0fq8f9.gz'
+[2026-04-09 18:29:57.081 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:57.081 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/Test.styles.css?v=EmnE-N62tOj8JzVXhQKYMTCGaqjKFH1Y9hHHYQ1y0uE - 200 1142 text/css 2.8069ms
+[2026-04-09 18:29:57.081 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/jquery/dist/jquery.min.js - null null
+[2026-04-09 18:29:57.082 +05:30  INF]  Sending file. Request path: 'css/site.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\qjwi4eqh4p-{0}-b9sayid5wm-b9sayid5wm.gz'
+[2026-04-09 18:29:57.082 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:57.082 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 5.642ms
+[2026-04-09 18:29:57.083 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+[2026-04-09 18:29:57.090 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/js/site.js?v=6Sa0HzRKMpj-CyPazi3nW7T-7JeGevso9lr7TIvx9PY - null null
+[2026-04-09 18:29:57.090 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:57.091 +05:30  INF]  Sending file. Request path: 'js/site.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\5338nyzxdi-{0}-n0sxxbs1h7-n0sxxbs1h7.gz'
+[2026-04-09 18:29:57.091 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:57.091 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/js/site.js?v=6Sa0HzRKMpj-CyPazi3nW7T-7JeGevso9lr7TIvx9PY - 200 1607 text/javascript 1.5484ms
+[2026-04-09 18:29:57.092 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/js/jquery.datatables.min.js - null null
+[2026-04-09 18:29:57.092 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:57.092 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/css/jquery.datatables.min.css - null null
+[2026-04-09 18:29:57.093 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:57.095 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - null null
+[2026-04-09 18:29:57.099 +05:30  INF]  Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\nvt6kn2274-{0}-46ein0sx1k-46ein0sx1k.gz'
+[2026-04-09 18:29:57.099 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:57.099 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 24.2218ms
+[2026-04-09 18:29:57.137 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 42.2353ms
+[2026-04-09 18:29:57.138 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_vs/browserLink - null null
+[2026-04-09 18:29:57.139 +05:30  INF]  Sending file. Request path: 'js/jquery.dataTables.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\4m91129lxn-{0}-lp9u3th1pw-lp9u3th1pw.gz'
+[2026-04-09 18:29:57.139 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:57.139 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/js/jquery.datatables.min.js - 200 103579 text/javascript 47.4635ms
+[2026-04-09 18:29:57.100 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:57.130 +05:30  INF]  Sending file. Request path: 'css/jquery.dataTables.min.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\hkn0i1k4u0-{0}-x0ipjb9j10-x0ipjb9j10.gz'
+[2026-04-09 18:29:57.141 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:57.141 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/css/jquery.datatables.min.css - 200 29077 text/css 48.624ms
+[2026-04-09 18:29:57.145 +05:30  INF]  Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\af982hj7nl-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+[2026-04-09 18:29:57.145 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:57.145 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 64.224ms
+[2026-04-09 18:29:57.158 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.7334ms
+[2026-04-09 18:29:57.176 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:57.180 +05:30  INF]  Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\bbrjc4pj7k-{0}-493y06b0oq-493y06b0oq.gz'
+[2026-04-09 18:29:57.180 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:29:57.181 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 98.191ms
+[2026-04-09 18:30:04.696 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7253/Home/SendMessage - application/json 17
+[2026-04-09 18:30:04.697 +05:30  INF]  Executing endpoint 'Test.Controllers.HomeController.SendMessage (Test)'
+[2026-04-09 18:30:04.700 +05:30  INF]  Route matched with {action = "SendMessage", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendMessage(TestData.Models.Viewmodel.ChatRequest) on controller Test.Controllers.HomeController (Test).
+[2026-04-09 18:30:04.707 +05:30  INF]  Start processing HTTP request POST https://localhost:7124/api/Chat/chat
+[2026-04-09 18:30:04.707 +05:30  INF]  Sending HTTP request POST https://localhost:7124/api/Chat/chat
+[2026-04-09 18:30:04.832 +05:30  INF]  Received HTTP response headers after 124.5852ms - 415
+[2026-04-09 18:30:04.832 +05:30  INF]  End processing HTTP request after 124.8633ms - 415
+[2026-04-09 18:30:04.835 +05:30  INF]  Executing ContentResult with HTTP Response ContentType of application/json
+[2026-04-09 18:30:04.835 +05:30  INF]  Executed action Test.Controllers.HomeController.SendMessage (Test) in 134.5381ms
+[2026-04-09 18:30:04.835 +05:30  INF]  Executed endpoint 'Test.Controllers.HomeController.SendMessage (Test)'
+[2026-04-09 18:30:04.835 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7253/Home/SendMessage - 200 176 application/json 138.9608ms
+[2026-04-09 18:33:24.760 +05:30  INF]  User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2026-04-09 18:33:26.634 +05:30  INF]  Now listening on: https://localhost:7253
+[2026-04-09 18:33:26.635 +05:30  INF]  Now listening on: http://localhost:5092
+[2026-04-09 18:33:26.706 +05:30  INF]  Application started. Press Ctrl+C to shut down.
+[2026-04-09 18:33:26.706 +05:30  INF]  Hosting environment: Development
+[2026-04-09 18:33:26.706 +05:30  INF]  Content root path: C:\Akanksha\Test\Test
+[2026-04-09 18:33:27.360 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/ - null null
+[2026-04-09 18:33:27.685 +05:30  INF]  Executing endpoint 'Test.Controllers.AdminController.Login (Test)'
+[2026-04-09 18:33:27.735 +05:30  INF]  Route matched with {action = "Login", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login() on controller Test.Controllers.AdminController (Test).
+[2026-04-09 18:33:27.747 +05:30  INF]  Today was so sunny!!
+[2026-04-09 18:33:27.757 +05:30  INF]  Executing ViewResult, running view Login.
+[2026-04-09 18:33:27.818 +05:30  INF]  Executed ViewResult - view Login executed in 62.0954ms.
+[2026-04-09 18:33:27.820 +05:30  INF]  Executed action Test.Controllers.AdminController.Login (Test) in 84.3174ms
+[2026-04-09 18:33:27.820 +05:30  INF]  Executed endpoint 'Test.Controllers.AdminController.Login (Test)'
+[2026-04-09 18:33:27.835 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/ - 200 null text/html; charset=utf-8 484.0499ms
+[2026-04-09 18:33:27.849 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - null null
+[2026-04-09 18:33:27.876 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 26.729ms
+[2026-04-09 18:33:27.916 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_vs/browserLink - null null
+[2026-04-09 18:33:27.990 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.1435ms
+[2026-04-09 18:33:29.216 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7253/Admin/LoginPost - application/json 51
+[2026-04-09 18:33:29.219 +05:30  INF]  Executing endpoint 'Test.Controllers.AdminController.LoginPost (Test)'
+[2026-04-09 18:33:29.236 +05:30  INF]  Route matched with {action = "LoginPost", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginPost(Testdata.Viewmodel.Logindata) on controller Test.Controllers.AdminController (Test).
+[2026-04-09 18:33:29.299 +05:30  INF]  Start processing HTTP request POST https://localhost:7124/api/AdminLogin/Login
+[2026-04-09 18:33:29.302 +05:30  INF]  Sending HTTP request POST https://localhost:7124/api/AdminLogin/Login
+[2026-04-09 18:33:33.078 +05:30  INF]  Received HTTP response headers after 3772.2728ms - 200
+[2026-04-09 18:33:33.079 +05:30  INF]  End processing HTTP request after 3784.2425ms - 200
+[2026-04-09 18:33:33.096 +05:30  INF]  Executing OkObjectResult, writing value of type 'Testdata.Viewmodel.ResponseModel`1[[Testdata.Viewmodel.LoginModel, TestData, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[2026-04-09 18:33:33.101 +05:30  INF]  Executed action Test.Controllers.AdminController.LoginPost (Test) in 3864.6329ms
+[2026-04-09 18:33:33.102 +05:30  INF]  Executed endpoint 'Test.Controllers.AdminController.LoginPost (Test)'
+[2026-04-09 18:33:33.103 +05:30  INF]  Request finished HTTP/2 POST https://localhost:7253/Admin/LoginPost - 200 null application/json; charset=utf-8 3886.7289ms
+[2026-04-09 18:33:33.118 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/Home/Index - null null
+[2026-04-09 18:33:33.131 +05:30  INF]  Executing endpoint 'Test.Controllers.HomeController.Index (Test)'
+[2026-04-09 18:33:33.133 +05:30  INF]  Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Test.Controllers.HomeController (Test).
+[2026-04-09 18:33:33.140 +05:30  INF]  Executing ViewResult, running view Index.
+[2026-04-09 18:33:33.249 +05:30  INF]  Executed ViewResult - view Index executed in 112.6232ms.
+[2026-04-09 18:33:33.256 +05:30  INF]  Executed action Test.Controllers.HomeController.Index (Test) in 123.0053ms
+[2026-04-09 18:33:33.256 +05:30  INF]  Executed endpoint 'Test.Controllers.HomeController.Index (Test)'
+[2026-04-09 18:33:33.256 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/Home/Index - 200 null text/html; charset=utf-8 138.3513ms
+[2026-04-09 18:33:33.263 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/css/bootstrap.min.css - null null
+[2026-04-09 18:33:33.265 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+[2026-04-09 18:33:33.266 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/Test.styles.css?v=EmnE-N62tOj8JzVXhQKYMTCGaqjKFH1Y9hHHYQ1y0uE - null null
+[2026-04-09 18:33:33.266 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/css/jquery.datatables.min.css - null null
+[2026-04-09 18:33:33.267 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/jquery/dist/jquery.min.js - null null
+[2026-04-09 18:33:33.268 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:33.268 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:33.268 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:33.268 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:33.273 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:33.300 +05:30  INF]  Sending file. Request path: 'css/site.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\qjwi4eqh4p-{0}-b9sayid5wm-b9sayid5wm.gz'
+[2026-04-09 18:33:33.300 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:33.300 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 35.4754ms
+[2026-04-09 18:33:33.301 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+[2026-04-09 18:33:33.303 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:33.306 +05:30  INF]  Sending file. Request path: 'Test.styles.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\n2e975ve3f-{0}-ahkl0fq8f9-ahkl0fq8f9.gz'
+[2026-04-09 18:33:33.306 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:33.306 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/Test.styles.css?v=EmnE-N62tOj8JzVXhQKYMTCGaqjKFH1Y9hHHYQ1y0uE - 200 1142 text/css 40.3409ms
+[2026-04-09 18:33:33.307 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - null null
+[2026-04-09 18:33:33.309 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/js/site.js?v=6Sa0HzRKMpj-CyPazi3nW7T-7JeGevso9lr7TIvx9PY - null null
+[2026-04-09 18:33:33.309 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/js/jquery.datatables.min.js - null null
+[2026-04-09 18:33:33.309 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:33.310 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_vs/browserLink - null null
+[2026-04-09 18:33:33.311 +05:30  INF]  Sending file. Request path: 'js/site.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\5338nyzxdi-{0}-n0sxxbs1h7-n0sxxbs1h7.gz'
+[2026-04-09 18:33:33.311 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:33.311 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/js/site.js?v=6Sa0HzRKMpj-CyPazi3nW7T-7JeGevso9lr7TIvx9PY - 200 1607 text/javascript 2.0375ms
+[2026-04-09 18:33:33.311 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:33.345 +05:30  INF]  Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\af982hj7nl-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+[2026-04-09 18:33:33.345 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:33.346 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 78.6974ms
+[2026-04-09 18:33:33.347 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 40.1814ms
+[2026-04-09 18:33:33.357 +05:30  INF]  Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\nvt6kn2274-{0}-46ein0sx1k-46ein0sx1k.gz'
+[2026-04-09 18:33:33.357 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:33.358 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 95.1689ms
+[2026-04-09 18:33:33.360 +05:30  INF]  Sending file. Request path: 'css/jquery.dataTables.min.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\hkn0i1k4u0-{0}-x0ipjb9j10-x0ipjb9j10.gz'
+[2026-04-09 18:33:33.360 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:33.360 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/css/jquery.datatables.min.css - 200 29077 text/css 93.607ms
+[2026-04-09 18:33:33.368 +05:30  INF]  Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\bbrjc4pj7k-{0}-493y06b0oq-493y06b0oq.gz'
+[2026-04-09 18:33:33.369 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:33.371 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 69.8937ms
+[2026-04-09 18:33:33.378 +05:30  INF]  Sending file. Request path: 'js/jquery.dataTables.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\4m91129lxn-{0}-lp9u3th1pw-lp9u3th1pw.gz'
+[2026-04-09 18:33:33.378 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:33.378 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/js/jquery.datatables.min.js - 200 103579 text/javascript 69.2485ms
+[2026-04-09 18:33:33.393 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_vs/browserLink - 200 null text/javascript; charset=UTF-8 82.7551ms
+[2026-04-09 18:33:38.486 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/Home/SendMessage - null null
+[2026-04-09 18:33:38.491 +05:30  INF]  Executing endpoint 'Test.Controllers.HomeController.SendMessage (Test)'
+[2026-04-09 18:33:38.493 +05:30  INF]  Route matched with {action = "SendMessage", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SendMessage() on controller Test.Controllers.HomeController (Test).
+[2026-04-09 18:33:38.494 +05:30  INF]  Executing ViewResult, running view SendMessage.
+[2026-04-09 18:33:38.502 +05:30  INF]  Executed ViewResult - view SendMessage executed in 8.2913ms.
+[2026-04-09 18:33:38.502 +05:30  INF]  Executed action Test.Controllers.HomeController.SendMessage (Test) in 8.8867ms
+[2026-04-09 18:33:38.502 +05:30  INF]  Executed endpoint 'Test.Controllers.HomeController.SendMessage (Test)'
+[2026-04-09 18:33:38.502 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/Home/SendMessage - 200 null text/html; charset=utf-8 16.44ms
+[2026-04-09 18:33:38.550 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/css/bootstrap.min.css - null null
+[2026-04-09 18:33:38.553 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:38.553 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - null null
+[2026-04-09 18:33:38.556 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/Test.styles.css?v=EmnE-N62tOj8JzVXhQKYMTCGaqjKFH1Y9hHHYQ1y0uE - null null
+[2026-04-09 18:33:38.557 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:38.558 +05:30  INF]  Sending file. Request path: 'Test.styles.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\n2e975ve3f-{0}-ahkl0fq8f9-ahkl0fq8f9.gz'
+[2026-04-09 18:33:38.558 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:38.558 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/Test.styles.css?v=EmnE-N62tOj8JzVXhQKYMTCGaqjKFH1Y9hHHYQ1y0uE - 200 1142 text/css 1.6229ms
+[2026-04-09 18:33:38.558 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:38.558 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/css/jquery.datatables.min.css - null null
+[2026-04-09 18:33:38.558 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:38.560 +05:30  INF]  Sending file. Request path: 'css/site.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\qjwi4eqh4p-{0}-b9sayid5wm-b9sayid5wm.gz'
+[2026-04-09 18:33:38.561 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/jquery/dist/jquery.min.js - null null
+[2026-04-09 18:33:38.561 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:38.561 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/css/site.css?v=j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg - 200 700 text/css 7.8448ms
+[2026-04-09 18:33:38.561 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+[2026-04-09 18:33:38.561 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/js/site.js?v=6Sa0HzRKMpj-CyPazi3nW7T-7JeGevso9lr7TIvx9PY - null null
+[2026-04-09 18:33:38.562 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/js/jquery.datatables.min.js - null null
+[2026-04-09 18:33:38.567 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:38.567 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:38.568 +05:30  INF]  Sending file. Request path: 'js/site.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\5338nyzxdi-{0}-n0sxxbs1h7-n0sxxbs1h7.gz'
+[2026-04-09 18:33:38.568 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:38.568 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/js/site.js?v=6Sa0HzRKMpj-CyPazi3nW7T-7JeGevso9lr7TIvx9PY - 200 1607 text/javascript 6.4081ms
+[2026-04-09 18:33:38.571 +05:30  INF]  Sending file. Request path: 'css/jquery.dataTables.min.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\hkn0i1k4u0-{0}-x0ipjb9j10-x0ipjb9j10.gz'
+[2026-04-09 18:33:38.571 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:38.571 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/css/jquery.datatables.min.css - 200 29077 text/css 13.384ms
+[2026-04-09 18:33:38.572 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - null null
+[2026-04-09 18:33:38.573 +05:30  INF]  Request starting HTTP/2 GET https://localhost:7253/_vs/browserLink - null null
+[2026-04-09 18:33:38.574 +05:30  INF]  Sending file. Request path: 'lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\nvt6kn2274-{0}-46ein0sx1k-46ein0sx1k.gz'
+[2026-04-09 18:33:38.574 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:38.574 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/css/bootstrap.min.css - 200 232871 text/css 24.7923ms
+[2026-04-09 18:33:38.575 +05:30  INF]  Sending file. Request path: 'js/jquery.dataTables.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\4m91129lxn-{0}-lp9u3th1pw-lp9u3th1pw.gz'
+[2026-04-09 18:33:38.575 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:38.575 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/js/jquery.datatables.min.js - 200 103579 text/javascript 12.9185ms
+[2026-04-09 18:33:38.576 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_framework/aspnetcore-browser-refresh.js - 200 16493 application/javascript; charset=utf-8 3.5344ms
+[2026-04-09 18:33:38.586 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:38.598 +05:30  INF]  Sending file. Request path: 'lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\af982hj7nl-{0}-o1o13a6vjx-o1o13a6vjx.gz'
+[2026-04-09 18:33:38.598 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:38.598 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/jquery/dist/jquery.min.js - 200 87576 text/javascript 37.4025ms
+[2026-04-09 18:33:38.599 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.1925ms
+[2026-04-09 18:33:38.659 +05:30  INF]  Executing endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:38.663 +05:30  INF]  Sending file. Request path: 'lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Akanksha\Test\Test\obj\Debug\net9.0\compressed\bbrjc4pj7k-{0}-493y06b0oq-493y06b0oq.gz'
+[2026-04-09 18:33:38.663 +05:30  INF]  Executed endpoint 'Microsoft.AspNetCore.Routing.RouteEndpoint'
+[2026-04-09 18:33:38.663 +05:30  INF]  Request finished HTTP/2 GET https://localhost:7253/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 80764 text/javascript 101.901ms
+[2026-04-09 18:33:44.023 +05:30  INF]  Request starting HTTP/2 POST https://localhost:7253/Home/SendMessage - application/json 17
+[2026-04-09 18:33:44.023 +05:30  INF]  Executing endpoint 'Test.Controllers.HomeController.SendMessage (Test)'
+[2026-04-09 18:33:44.028 +05:30  INF]  Route matched with {action = "SendMessage", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SendMessage(TestData.Models.Viewmodel.ChatRequest) on controller Test.Controllers.HomeController (Test).
+[2026-04-09 18:33:51.989 +05:30  INF]  Start processing HTTP request POST https://localhost:7124/api/Chat/chat
+[2026-04-09 18:33:51.990 +05:30  INF]  Sending HTTP request POST https://localhost:7124/api/Chat/chat
+[2026-04-09 18:33:52.097 +05:30  INF]  Received HTTP response headers after 106.9475ms - 400
+[2026-04-09 18:33:52.097 +05:30  INF]  End processing HTTP request after 107.3149ms - 400

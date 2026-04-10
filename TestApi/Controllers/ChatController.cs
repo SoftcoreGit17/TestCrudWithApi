@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Http;
@@ -9,8 +10,9 @@ using TestData.Models.Viewmodel;
 
 namespace TestApi.Controllers
 {
+    [Route("api/[controller]")]
     [ApiController]
-    [Route("api/chat")]
+    [Authorize]
     public class ChatController : ControllerBase
     {
         // 1️⃣ Declare _httpClient as a private readonly field
