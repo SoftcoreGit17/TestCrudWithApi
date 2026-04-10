@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics;
@@ -273,32 +273,37 @@ namespace Test.Controllers
             if (model == null || string.IsNullOrWhiteSpace(model.Message))
                 return BadRequest(new { message = "Message is required" });
 
-            string token = Request.Cookies["accessToken"];
-            if (string.IsNullOrEmpty(token))
-                return Unauthorized(new { message = "Unauthorized" });
+            var token = Request.Cookies["accessToken"];
 
-            var apiUrl = "api/Chat/chat"; // your internal API route
+            if (string.IsNullOrWhiteSpace(token))
+                return Unauthorized(new { message = "Token missing" });
 
-            // Prepare JSON body exactly like your API expects
+            if (token.StartsWith("Bearer "))
+                token = token.Substring(7);
+
             var requestBody = new
             {
-                model = "llama3",
-                prompt = model.Message,
-                stream = true,
-                keep_alive = "10m",
-                options = new { num_predict = 150 }
+                message = model.Message
             };
 
             var json = JsonSerializer.Serialize(requestBody);
-            using var request = new HttpRequestMessage(HttpMethod.Post, apiUrl)
-            {
-                Content = new StringContent(json, Encoding.UTF8, "application/json")
-            };
-            request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
-            var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
-            var responseContent = await response.Content.ReadAsStringAsync();
 
-            return Content(responseContent, "application/json");
+            using var request = new HttpRequestMessage(HttpMethod.Post, "api/Chat/chat");
+            request.Content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            request.Headers.Authorization =
+                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+            var response = await _httpClient.SendAsync(request);
+
+            var responseBody = await response.Content.ReadAsStringAsync();
+
+            if (!response.IsSuccessStatusCode)
+            {
+                return Content($"ERROR: {response.StatusCode} | {responseBody}", "text/plain");
+            }
+
+            return Content(responseBody, "application/json");
         }
     }
 }

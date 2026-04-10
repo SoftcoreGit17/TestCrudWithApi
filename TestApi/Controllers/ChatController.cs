@@ -131,22 +131,6 @@ namespace TestApi.Controllers
 
             return Ok(new { message = fullResponse.ToString() });
         }
-        //[HttpPost("chat")]
-        //public async Task<IActionResult> Chat([FromBody] ChatRequest request)
-        //{
-        //    using var client = new HttpClient { Timeout = TimeSpan.FromMinutes(10) };
-        //    var requestBody = new { model = "llama3", prompt = request.Message, stream = false };
-        //    var json = JsonSerializer.Serialize(requestBody);
-        //    var content = new StringContent(json, Encoding.UTF8, "application/json");
-        //    var response = await client.PostAsync("http://localhost:11434/api/generate", content);
-        //    var responseString = await response.Content.ReadAsStringAsync();
-        //    // Deserialize the response
-        //    var llamaResponse = JsonSerializer.Deserialize<LlamaResponse>(responseString, new JsonSerializerOptions
-        //    {
-        //        PropertyNameCaseInsensitive = true
-        //    });
-        //    // Return only the text
-        //    return Ok(new { message = llamaResponse.Response });
-        //}
+      
     }
 }
